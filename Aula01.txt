@@ -1,0 +1,101 @@
+🛡️ Resumo da Aula – Conteúdos de Cybersegurança & Atividades 09/06/2026
+(Formação Mulher Digital – Turma 03)
+
+🔐 Introdução à Cybersegurança
+A aula apresentou os conceitos fundamentais da área, preparando as alunas para o curso Introdução à Cyber da Cisco e para a futura certificação.
+
+Principais conceitos abordados
+Cibersegurança: práticas para proteger computadores, redes, dispositivos e dados.
+
+Importância da área: proteção de informações pessoais, empresariais e governamentais.
+
+Exemplos de proteção:
+
+Antivírus → “guarda”
+
+Senhas → “chave”
+
+Firewall → “muro de proteção”
+
+Hackers mal-intencionados → “invasores”
+
+🔒 Princípios da Segurança da Informação (Modelo CIA)
+Confidencialidade – impedir acesso não autorizado.
+
+Integridade – garantir que os dados não sejam alterados indevidamente.
+
+Disponibilidade – assegurar que os dados estejam acessíveis quando necessário.
+
+🧑‍💻 Tipos de Hackers
+White Hat – profissionais éticos que testam sistemas.
+
+Black Hat – criminosos que invadem para roubo ou lucro.
+
+Grey Hat – encontram falhas sem permissão e podem pedir recompensa.
+
+Hacktivistas – ataques motivados por causas sociais/políticas.
+
+Insider – funcionário que vaza ou vende informações internas.
+
+Script Kiddie – usa ferramentas prontas sem conhecimento profundo.
+
+🐟 Ataques Cibernéticos
+A aula introduziu os principais tipos de ataques e como eles acontecem:
+
+Phishing (e-mails falsos)
+
+Roubo de dados
+
+Alteração de sistemas
+
+Destruição de informações
+
+Vulnerabilidades em redes domésticas e públicas
+
+📚 Plataformas Utilizadas no Curso
+Cisco Networking Academy → onde ocorre o curso Introdução à Cyber (6h).
+
+Moodle → conteúdos de Soft Skills e formulário obrigatório.
+
+GitHub → onde serão registradas atividades práticas.
+
+Packet Tracer → ferramenta para simulações de redes (usada após o Pré-Work).
+
+🧪 Atividades da Aula
+1. Análise de E-mail Suspeito
+As alunas receberam um e-mail falso para identificar sinais de fraude, como:
+
+Erros de escrita
+
+Links suspeitos
+
+Tom de urgência
+
+Remetente estranho
+
+2. Mapa Mental no Canva
+Cada aluna deve:
+
+Duplicar o modelo enviado pela facilitadora
+
+Colocar seu nome
+
+Registrar os elementos que tornam o e-mail suspeito
+
+3. Preparação para o Packet Tracer
+Será utilizado na fase técnica do curso.
+
+É necessário baixar o programa (versão 64 bits).
+
+Será usado para criar e simular redes.
+
+Os arquivos das práticas serão enviados para o GitHub.
+
+🧭 Orientações Importantes
+Não é obrigatório adiantar o curso da Cisco; seguir o ritmo da facilitadora ajuda na compreensão.
+
+O formulário Linha de Base no Moodle deve ser preenchido para liberar os módulos.
+
+Problemas técnicos devem ser reportados à equipe (Vanessa / Mayara).
+
+A aula reforçou a importância de organização e calma — ninguém está atrasada.
