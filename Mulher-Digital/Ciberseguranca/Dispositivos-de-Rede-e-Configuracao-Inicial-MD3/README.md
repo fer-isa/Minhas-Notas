@@ -106,7 +106,7 @@ A topologia foi dividida nas três camadas do modelo hierárquico Cisco:
 
 ---
 
-## 📸 Gif de Demonstração do Laboratório
+## 🎥 Video de Demonstração do Laboratório
 
 Abaixo está um Gif demonstrando o funcionamento da simulação visual e o fluxo dos pacotes ICMP percorrendo a topologia no Cisco Packet Tracer:
 
