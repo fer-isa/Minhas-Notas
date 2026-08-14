@@ -4,7 +4,7 @@
 
 
 <h1>🛡️ Introdução à Cibersegurança</h1>
-  <strong>Anotações dos Módulos 01 ao 06</strong><br>
+  <strong>Anotações dos Módulos 1 ao 6</strong><br>
   <em>Formação Mulher Digital | Trilha de Cibersegurança</em>
 </div>
 
