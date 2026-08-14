@@ -55,7 +55,7 @@ Este espaço é dedicado ao mapeamento das competências sociocomportamentais e 
 
 Meu currículo está estruturado para destacar minha capacidade analítica, entendimento de redes/sistemas, minha formação contínua (Mulher Digital) e minhas habilidades de gestão de projetos. Ele foi otimizado com palavras-chave estratégicas para sistemas ATS (*Applicant Tracking Systems*).
 
-📎 **Link para o meu CV em PDF:** [Clique aqui para visualizar meu Currículo](#../../assets/Curriculo_Fernanda_Isabelli.pdf)
+📎 **Link para o meu CV em PDF:** [Clique aqui para visualizar meu Currículo](#../assets/Curriculo_Fernanda_Isabelli.pdf)
 
 ### 🔗 LinkedIn Estratégico
 
