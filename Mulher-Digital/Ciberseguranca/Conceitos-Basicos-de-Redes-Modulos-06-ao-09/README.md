@@ -1,4 +1,4 @@
-# 🌐 Conceitos Básicos de Redes — Módulos-06-a-09 (Avançado)
+# 🌐 Conceitos Básicos de Redes — Módulos 6 ao 9 (Avançado)
 **Formação Mulher Digital | Trilha de Cibersegurança**
 
 ## 📌 Visão Geral
