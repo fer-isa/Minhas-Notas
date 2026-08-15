@@ -1,40 +1,48 @@
-# 📚 Minhas Notas
-
-Repositório criado para documentar **ferramentas, práticas, comandos e aprendizados** adquiridos ao longo da formação **Mulher Digital**.  
-Aqui registro meus estudos, experimentos e materiais de apoio para acompanhar minha evolução na área de tecnologia.
-
----
-
-## 🎯 Objetivo
-
-Organizar e centralizar tudo o que estou aprendendo, incluindo:
-
-- Comandos importantes  
-- Ferramentas utilizadas  
-- Boas práticas  
-- Exercícios e anotações  
-- Projetos desenvolvidos durante a formação  
+<div align="center">
+  <h1>📚 Repositório: Minhas Notas</h1>
+  <strong>Formação Mulher Digital & Desenvolvimento Profissional</strong><br>
+  <em>Registro de estudos, experimentos e materiais de apoio</em>
+</div>
 
 ---
 
-## 🛠️ Conteúdos
+## 📌 Visão Geral
 
-Este repositório poderá incluir:
-
-- **Anotações de aulas**  
-- **Tutoriais e guias rápidos**  
-- **Snippets de código**  
-- **Resumos de ferramentas**  
-- **Checklist de práticas recomendadas**  
+Este repositório foi criado para documentar e centralizar **ferramentas, práticas, comandos e aprendizados** adquiridos ao longo da formação **Mulher Digital** e em meus estudos contínuos. O objetivo é manter um registro estruturado para acompanhar minha evolução na área de tecnologia e servir como uma base de consulta rápida e portfólio de conhecimento.
 
 ---
 
-## 🚀 Sobre a formação
+## 🗂️ Estrutura do Repositório
 
-A formação **Mulher Digital** tem como propósito capacitar mulheres para atuarem na área de tecnologia, promovendo inclusão, autonomia e desenvolvimento profissional.
+Os conteúdos estão organizados de forma hierárquica por módulos de estudo:
+
+* 🔐 **Cibersegurança:** Conceitos, práticas e fundamentos.
+* 🌐 **Redes:** Simulações e arquitetura.
+* 🧠 **Soft Skills:** Desenvolvimento pessoal, carreira e posicionamento.
+* 📹 **Webinars:** Biblioteca isolada de palestras, PDFs de apoio e masterclasses.
 
 ---
 
-## 📌 Status
+## 🛠️ O Que Você Encontrará Aqui
 
-Em constante atualização conforme avanço na formação.
+* 📝 **Anotações de aulas e resumos teóricos**
+* 💻 **Snippets de código e comandos importantes**
+* ⚙️ **Tutoriais e checklists de boas práticas**
+* 📂 **Projetos e exercícios práticos desenvolvidos na formação**
+
+---
+
+## 👩‍💻 Sobre a Autora
+
+Sou uma profissional de tecnologia formada como Programadora de Sistemas pelo SENAC SP, atualmente atuando como assistente de gerenciamento de projetos em uma consultoria de TI. Utilizo este espaço para consolidar a base teórica e registrar o uso de tecnologias e ferramentas que permeiam meus estudos e minha rotina técnica, incluindo **HTML, CSS, JavaScript, C#, SQL, Git e GitHub**.
+
+---
+
+## 🚀 Sobre a Formação
+
+O programa **Mulher Digital** tem como propósito capacitar mulheres para atuarem na área de tecnologia, promovendo inclusão, autonomia e desenvolvimento profissional, fornecendo as ferramentas necessárias para superar barreiras de entrada e ocupar espaços no mercado de trabalho.
+
+---
+<div align="center">
+  <em>⏳ Repositório em constante atualização conforme avanço nos estudos.</em>
+</div>
