@@ -31,7 +31,7 @@ O webinar abordou a importância estratégica do LinkedIn e a construção da pe
   * Experiências anteriores não devem ser deletadas do perfil. Ocultar o passado gera lacunas suspeitas; é mais estratégico assumir a jornada de transição.
 * **Mito 3: "Basta criar o perfil e curtir postagens"**
   * O algoritmo do LinkedIn não entrega relevância para usuários que atuam apenas como espectadores. É necessário produzir conteúdo e comentar com profundidade.
-
+    
 ## 🚀 Oportunidade para Mulheres
 
 * O mercado corporativo e de tecnologia ainda é majoritariamente masculino, e as mulheres costumam hesitar e se autoexcluir de processos seletivos.
