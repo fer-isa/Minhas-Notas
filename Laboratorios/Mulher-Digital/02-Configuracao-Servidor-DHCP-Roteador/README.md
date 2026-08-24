@@ -1,42 +1,8 @@
-<div align="center">
+Entendi perfeitamente. O bloco de código (`bash`) não estava sendo fechado antes dos tópicos seguintes, fazendo com que todo o texto até o final ficasse preso dentro da caixa escura de terminal.
 
-# 🧪 Laboratório: Configuração de Servidor DHCP no Roteador  
-**Formação Mulher Digital • Cisco Packet Tracer**
+Aqui está o trecho da seção 3 até a 6 com os blocos devidamente fechados para que as seções 4, 5 e 6 (o download) fiquem 100% normais e fora de blocos de código:
 
-</div>
-
----
-
-## 📌 1. Objetivo da Atividade
-Implementar um **Servidor DHCP** em um roteador Cisco, permitindo a distribuição automática dos parâmetros de rede para hosts da LAN:
-
-- Endereço IP  
-- Máscara de Sub-rede  
-- Gateway Padrão  
-- Servidor DNS  
-
----
-
-## 🏗️ 2. Topologia & Montagem Física
-
-### **Equipamentos Utilizados**
-- **Roteador:** Cisco 2911  
-- **Switch:** Cisco Catalyst 2960  
-- **Hosts:** 2 PCs genéricos (`PC0` e `PC1`)  
-- **Cabos:** Copper Straight-Through  
-
-### **Mapeamento de Conexões**
-
-| Origem | Interface | Destino | Interface |
-|-------|-----------|---------|-----------|
-| PC0 | FastEthernet0 | Switch 2960 | FastEthernet0/1 |
-| PC1 | FastEthernet0 | Switch 2960 | FastEthernet0/2 |
-| Switch 2960 | FastEthernet0/24 | Roteador 2911 | GigabitEthernet0/0 |
-
-> ℹ️ **Nota:** PCs utilizam portas *FastEthernet (100 Mbps)*, enquanto o roteador Cisco 2911 opera com *GigabitEthernet (1 Gbps)*.
-
----
-
+```markdown
 ## 💻 3. Configuração no Roteador (CLI)
 
 Acesse o CLI do roteador, recuse o assistente inicial (`no`) e aplique:
@@ -49,33 +15,54 @@ Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip address 192.168.1.1 255.255.255.0
 Router(config-if)# no shutdown
 Router(config-if)# exit
-✅ 4. Validação & Teste de Conectividade
-Abra o PC0 → Desktop → IP Configuration
 
-Altere de Static para DHCP
+```
 
-O protocolo DORA será executado e o host receberá automaticamente:
+### **B. Configuração do Pool DHCP**
 
-Código
+```bash
+Router(config)# ip dhcp excluded-address 192.168.1.1
+Router(config)# ip dhcp pool REDE_LOCAL
+Router(dhcp-config)# network 192.168.1.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.1.1
+Router(dhcp-config)# dns-server 8.8.8.8
+Router(dhcp-config)# exit
+Router# write memory
+
+```
+
+---
+
+## ✅ 4. Validação & Teste de Conectividade
+
+1. Abra o **PC0** → **Desktop** → **IP Configuration**.
+2. Altere de **Static** para **DHCP**.
+3. O protocolo DORA será executado e o host receberá automaticamente os parâmetros:
+
+```text
 IP Address:      192.168.1.2
 Subnet Mask:     255.255.255.0
 Default Gateway: 192.168.1.1
 DNS Server:      8.8.8.8
-Repita o processo no PC1, que deverá receber o IP 192.168.1.3.
 
-⚠️ 5. Troubleshooting (Caso Algo Não Funcione)
-Se o Packet Tracer não atualizar o leasing DHCP:
+```
 
-PC0 → Config → altere Gateway/DNS para DHCP / Automático
+4. Repita o processo no **PC1**, que deverá receber o IP `192.168.1.3`.
 
-Volte em Desktop → IP Configuration → selecione novamente DHCP
+---
 
-Verifique se todos os links estão verdes (ativos)
+## ⚠️ 5. Troubleshooting (Caso Algo Não Funcione)
 
-Confirme que a interface do roteador está com no shutdown
+* **Lease não atualizado:** No PC → **Config** → altere Gateway/DNS para **DHCP / Automático**, volte em **Desktop** → **IP Configuration** e marque **DHCP** novamente.
+* **Portas inativas:** Verifique se as luzes das portas estão verdes no Packet Tracer.
+* **Interface desligada:** Confirme se aplicou o comando `no shutdown` na interface `GigabitEthernet0/0` do roteador.
+
+---
 
 ## 📥 6. Arquivos do Laboratório
 
-[![Download PKT](https://img.shields.io/badge/Download-Laboratório_.PKT-007ACC?style=for-the-badge&logo=cisco&logoColor=white)](./lab-dhcp-router-cisco.pkt?raw=true)
+> 📄 **Link direto:** [Clique aqui para baixar lab-dhcp-router-cisco.pkt](https://www.google.com/search?q=./lab-dhcp-router-cisco.pkt%3Fraw%3Dtrue)
 
-> 📄 **Link alternativo:** [Clique aqui para baixar lab-dhcp-router-cisco.pkt](./lab-dhcp-router-cisco.pkt?raw=true)
+```
+
+```
