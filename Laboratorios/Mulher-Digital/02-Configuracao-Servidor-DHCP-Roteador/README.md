@@ -1,7 +1,17 @@
+<div align="center">
+
 # 🧪 Laboratório: Configuração de Servidor DHCP no Roteador
-**Formação Mulher Digital • Cisco Packet Tracer**
+
+![Cisco](https://img.shields.io/badge/Cisco-Packet_Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
+![Protocolo](https://img.shields.io/badge/Protocolo-DHCP-2ea44f?style=flat-square)
+![Formação](https://img.shields.io/badge/Mulher_Digital-Redes-8A2BE2?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=flat-square)
+
+<p>Implementação e distribuição dinâmica de endereçamento IPv4 em roteadores Cisco via CLI.</p>
 
 </div>
+
+---
 
 ---
 
