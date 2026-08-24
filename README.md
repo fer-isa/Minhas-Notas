@@ -23,11 +23,10 @@ Este espaço reúne todas as minhas anotações técnicas, materiais de estudo, 
 
 | Seção | Descrição | Link de Acesso |
 | :--- | :--- | :---: |
-| 🛡️ **Cibersegurança** | Conceitos fundamentais, vetores de ataque, defesa e laboratórios. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/Ciberseguranca) |
-| 💡 **Soft Skills** | Comunicação, perfil profissional, empregabilidade e mentalidade tech. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/Soft-Skills) |
-| 🎥 **Webinars** | Resumos e aprendizados dos encontros ao vivo e masterclasses. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/Webinars) |
-| 📄 **Assets** | Recursos complementares, arquivos de apoio e currículo. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/assets) |
----
+| 🛡️ **Cibersegurança** | Conceitos fundamentais, vetores de ataque, defesa e laboratórios. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](/fer-isa/Minhas-Notas/tree/main/Ciberseguranca) |
+| 💡 **Soft Skills** | Comunicação, perfil profissional, empregabilidade e mentalidade tech. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](/fer-isa/Minhas-Notas/tree/main/Soft-Skills) |
+| 🎥 **Webinars** | Resumos e aprendizados dos encontros ao vivo e masterclasses. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](/fer-isa/Minhas-Notas/tree/main/Webinars) |
+| 📄 **Assets** | Recursos complementares, arquivos de apoio e currículo. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](/fer-isa/Minhas-Notas/tree/main/assets) |
 
 ### 🛠️ Competências em Desenvolvimento
 
