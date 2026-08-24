@@ -1,111 +1,233 @@
+
 <div align="center">
 
-# 🧪 Laboratório: Configuração de Servidor DHCP no Roteador
+  <h1>🧪 Laboratório: Configuração de Servidor DHCP no Roteador</h1>
+  <p><b>Implementação e distribuição dinâmica de endereçamento IPv4 em roteadores Cisco via CLI</b></p>
 
-![Cisco](https://img.shields.io/badge/Cisco-Packet_Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
-![Protocolo](https://img.shields.io/badge/Protocolo-DHCP-2ea44f?style=flat-square)
-![Formação](https://img.shields.io/badge/Mulher_Digital-Redes-8A2BE2?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Concluído-success?style=flat-square)
-
-<p>Implementação e distribuição dinâmica de endereçamento IPv4 em roteadores Cisco via CLI.</p>
+  <p>
+    <img src="https://img.shields.io/badge/Cisco-Packet_Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco Packet Tracer" />
+    <img src="https://img.shields.io/badge/Protocolo-DHCP-2ea44f?style=for-the-badge" alt="DHCP" />
+    <img src="https://img.shields.io/badge/CLI-Cisco_IOS-0A84FF?style=for-the-badge" alt="Cisco IOS" />
+    <img src="https://img.shields.io/badge/Trilha-Mulher_Digital_Redes-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
+    <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
+  </p>
 
 </div>
 
----
+<hr/>
 
----
+<h2>📌 1. Objetivo da Atividade</h2>
 
-## 📌 1. Objetivo da Atividade
-Configurar um roteador Cisco para atuar como **Servidor DHCP**, distribuindo de forma automatizada parâmetros de rede fundamentais (**Endereço IP**, **Máscara de Sub-rede**, **Gateway Padrão** e **Servidor DNS**) para os computadores da rede local (LAN).
+<p>
+Configurar um roteador Cisco para atuar como <b>Servidor DHCP (Dynamic Host Configuration Protocol)</b>, distribuindo de forma automatizada os parâmetros fundamentais de rede (<b>Endereço IP</b>, <b>Máscara de Sub-rede</b>, <b>Gateway Padrão</b> e <b>Servidor DNS</b>) para os computadores da rede local (LAN), eliminando a necessidade de configuração estática manual e prevenindo conflitos de IP.
+</p>
 
----
+<hr/>
 
-## 🏗️ 2. Topologia & Montagem Física
+<h2>🏗️ 2. Topologia & Montagem Física</h2>
 
-### **Equipamentos Utilizados**
-- **Roteador:** Cisco 2911  
-- **Switch:** Cisco Catalyst 2960  
-- **Hosts:** 2 PCs genéricos (`PC0` e `PC1`)  
-- **Cabos:** Copper Straight-Through  
+<h3>📦 Equipamentos Utilizados</h3>
+<ul>
+  <li><b>Roteador:</b> Cisco 2911 (1 unidade)</li>
+  <li><b>Switch de Acesso:</b> Cisco Catalyst 2960 (1 unidade)</li>
+  <li><b>Hosts Finais:</b> 2 PCs genéricos (<code>PC0</code> e <code>PC1</code>)</li>
+  <li><b>Meio de Transmissão:</b> Cabos de par trançado direto (<i>Copper Straight-Through</i>)</li>
+</ul>
 
-### **Mapeamento de Conexões**
+<h3>🔌 Mapeamento de Conexões</h3>
 
-| Origem | Interface | Destino | Interface |
-|:---|:---|:---|:---|
-| PC0 | FastEthernet0 | Switch 2960 | FastEthernet0/1 |
-| PC1 | FastEthernet0 | Switch 2960 | FastEthernet0/2 |
-| Switch 2960 | FastEthernet0/24 | Roteador 2911 | GigabitEthernet0/0 |
+<table width="100%">
+  <thead>
+    <tr bgcolor="#1f242c">
+      <th align="left">Dispositivo de Origem</th>
+      <th align="left">Interface de Origem</th>
+      <th align="left">Dispositivo de Destino</th>
+      <th align="left">Interface de Destino</th>
+      <th align="left">Tipo de Mídia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>PC0</b></td>
+      <td><code>FastEthernet0</code></td>
+      <td><b>Switch 2960</b></td>
+      <td><code>FastEthernet0/1</code></td>
+      <td>Cabo Direto (100 Mbps)</td>
+    </tr>
+    <tr>
+      <td><b>PC1</b></td>
+      <td><code>FastEthernet0</code></td>
+      <td><b>Switch 2960</b></td>
+      <td><code>FastEthernet0/2</code></td>
+      <td>Cabo Direto (100 Mbps)</td>
+    </tr>
+    <tr>
+      <td><b>Switch 2960</b></td>
+      <td><code>FastEthernet0/24</code></td>
+      <td><b>Roteador 2911</b></td>
+      <td><code>GigabitEthernet0/0</code></td>
+      <td>Cabo Direto (Uplink)</td>
+    </tr>
+  </tbody>
+</table>
 
-> ℹ️ **Nota:** PCs utilizam portas *FastEthernet (100 Mbps)*, enquanto o roteador Cisco 2911 opera com *GigabitEthernet (1 Gbps)*.
+<blockquote>
+  <b>ℹ️ Nota Técnica:</b> Os computadores operam em interfaces <i>FastEthernet (100 Mbps)</i>, enquanto o enlace de uplink com o roteador Cisco 2911 utiliza a porta <i>GigabitEthernet (1 Gbps)</i>.
+</blockquote>
 
----
+<hr/>
 
-## 💻 3. Configuração no Roteador (CLI)
+<h2>💻 3. Configuração no Roteador (Cisco IOS CLI)</h2>
 
-Acesse o CLI do roteador, recuse o assistente inicial (`no`) e aplique:
+<p>Acesse o CLI do roteador <b>Cisco 2911</b>, recuse a auto-configuração inicial digitando <code>no</code> e aplique os comandos abaixo:</p>
 
-### **A. Configuração da Interface e Gateway**
-```bash
+<details open>
+  <summary><b>A. Configuração da Interface LAN & Ativação do Gateway</b></summary>
+  <br/>
+  <pre>
 Router> enable
 Router# configure terminal
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip address 192.168.1.1 255.255.255.0
 Router(config-if)# no shutdown
 Router(config-if)# exit
+  </pre>
+</details>
 
-```
-
-### **B. Configuração do Pool DHCP**
-
-```bash
+<details open>
+  <summary><b>B. Criação e Parametrização do Pool DHCP</b></summary>
+  <br/>
+  <pre>
+# 1. Excluir o IP do Gateway para evitar duplicidade na rede
 Router(config)# ip dhcp excluded-address 192.168.1.1
-Router(config)# ip dhcp pool REDE_LOCAL
+
+# 2. Criar e nomear o pool DHCP
+Router(config)# ip dhcp pool POOL-LAN
+
+# 3. Definir a faixa de rede e máscara
 Router(dhcp-config)# network 192.168.1.0 255.255.255.0
+
+# 4. Definir o Gateway Padrão e Servidor DNS para os clientes
 Router(dhcp-config)# default-router 192.168.1.1
 Router(dhcp-config)# dns-server 8.8.8.8
 Router(dhcp-config)# exit
-Router# write memory
+  </pre>
+</details>
 
-```
+<details>
+  <summary><b>C. Salvamento da Configuração na NVRAM</b></summary>
+  <br/>
+  <pre>
+Router(config)# exit
+Router# copy running-config startup-config
+Destination filename [startup-config]? [Enter]
+[OK]
+  </pre>
+</details>
 
----
+<hr/>
 
-## ✅ 4. Validação & Teste de Conectividade
+<h2>🔍 4. Validação e Testes nos Dispositivos Finais</h2>
 
-1. Abra o **PC0** → **Desktop** → **IP Configuration**.
-2. Altere de **Static** para **DHCP**.
-3. O protocolo DORA será executado e o host receberá automaticamente os parâmetros:
+<h3>Etapa 1: Ativação do DHCP nos Clientes</h3>
+<ol>
+  <li>Clique no <b>PC0</b> → aba <b>Desktop</b> → <b>IP Configuration</b>.</li>
+  <li>Mude a opção de <i>Static</i> para <b>DHCP</b> e aguarde a mensagem <code>DHCP request successful</code>.</li>
+  <li>Repita o mesmo processo no <b>PC1</b>.</li>
+</ol>
 
-```text
-IP Address:      192.168.1.2
-Subnet Mask:     255.255.255.0
-Default Gateway: 192.168.1.1
-DNS Server:      8.8.8.8
+<h3>Etapa 2: Verificação de IP via Linha de Comando (PC0)</h3>
+<pre>
+PC> ipconfig /all
 
-```
+FastEthernet0 Connection:
+   IP Address......................: 192.168.1.2
+   Subnet Mask.....................: 255.255.255.0
+   Default Gateway.................: 192.168.1.1
+   DNS Server......................: 8.8.8.8
+   DHCP Server.....................: 192.168.1.1
+</pre>
 
-4. Repita o processo no **PC1**, que deverá receber o IP `192.168.1.3`.
+<h3>Etapa 3: Testes de Conectividade ICMP (Ping)</h3>
 
----
+<p><b>A. Teste PC0 $\to$ Gateway (Roteador <code>192.168.1.1</code>):</b></p>
+<pre>
+PC> ping 192.168.1.1
 
-## ⚠️ 5. Troubleshooting (Caso Algo Não Funcione)
+Pinging 192.168.1.1 with 32 bytes of data:
 
-* **Lease não atualizado:** No PC → **Config** → altere Gateway/DNS para **DHCP / Automático**, volte em **Desktop** → **IP Configuration** e marque **DHCP** novamente.
-* **Portas inativas:** Verifique se as luzes das portas estão verdes no Packet Tracer.
-* **Interface desligada:** Confirme se aplicou o comando `no shutdown` na interface `GigabitEthernet0/0` do roteador.
+Reply from 192.168.1.1: bytes=32 time&lt;1ms TTL=255
+Reply from 192.168.1.1: bytes=32 time&lt;1ms TTL=255
+Reply from 192.168.1.1: bytes=32 time&lt;1ms TTL=255
+Reply from 192.168.1.1: bytes=32 time&lt;1ms TTL=255
 
----
-## 📥 6. Arquivos do Laboratório
+Ping statistics for 192.168.1.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
+</pre>
 
-[![Download PKT](https://img.shields.io/badge/Download-Laborat%C3%B3rio_.PKT-007ACC?style=for-the-badge&logo=cisco&logoColor=white)](https://github.com/fer-isa/Minhas-Notas/blob/main/Laboratorios/Mulher-Digital/02-Configuracao-Servidor-DHCP-Roteador/lab-dhcp-router-cisco.pkt)
+<p><b>B. Teste PC0 $\to$ PC1 (Host para Host <code>192.168.1.3</code>):</b></p>
+<pre>
+PC> ping 192.168.1.3
 
-> 📄 **Link do arquivo:** [Acessar lab-dhcp-router-cisco.pkt](https://github.com/fer-isa/Minhas-Notas/blob/main/Laboratorios/Mulher-Digital/02-Configuracao-Servidor-DHCP-Roteador/lab-dhcp-router-cisco.pkt)
->
-> > 💡 **Como baixar:**  
-> 1. Clique no botão acima para abrir a página do arquivo.  
-> 2. Na barra superior direita do GitHub, clique no **ícone de Download** (seta para baixo ⬇️) ao lado do botão *Raw*.
-```
+Pinging 192.168.1.3 with 32 bytes of data:
 
-4. Clique no botão verde **Commit changes...** no canto superior direito para salvar.
+Reply from 192.168.1.3: bytes=32 time&lt;1ms TTL=128
+Reply from 192.168.1.3: bytes=32 time&lt;1ms TTL=128
+Reply from 192.168.1.3: bytes=32 time&lt;1ms TTL=128
+Reply from 192.168.1.3: bytes=32 time&lt;1ms TTL=128
+
+Ping statistics for 192.168.1.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
+</pre>
+
+<hr/>
+
+<h2>🔬 5. Auditoria de Concessão no Roteador</h2>
+
+<p>Para auditar os endereços atribuídos dinamicamente pelo servidor, utilize no CLI do roteador:</p>
+
+<pre>
+Router# show ip dhcp binding
+
+IP address       Client-ID/              Lease expiration        Type
+                 Hardware address
+192.168.1.2      0001.42A1.8C01          --                      Automatic
+192.168.1.3      0060.702B.9F12          --                      Automatic
+</pre>
+
+<blockquote>
+  <b>✅ Conclusão dos Testes:</b> O servidor DHCP alocou os IPs automaticamente a partir de <code>192.168.1.2</code>, preservando o endereço <code>192.168.1.1</code> para o Gateway conforme instruído na regra de exclusão.
+</blockquote>
+
+<hr/>
+
+<h2>📥 6. Arquivos do Laboratório</h2>
+
+<p>
+  <a href="https://github.com/fer-isa">
+    <img src="https://img.shields.io/badge/Download-lab--dhcp--router--cisco.pkt-0A84FF?style=for-the-badge&logo=cisco&logoColor=white" alt="Download PKT" />
+  </a>
+</p>
+
+<blockquote>
+  <b>💡 Como baixar o arquivo <code>.pkt</code> no GitHub:</b><br/>
+  1. Localize o arquivo <code>lab-dhcp-router-cisco.pkt</code> nesta mesma pasta do repositório.<br/>
+  2. Clique nele e, na barra de ferramentas à direita, clique no <b>ícone de Download</b> (seta para baixo ⬇️) para salvar o arquivo de simulação.
+</blockquote>
+
+<hr/>
+
+<div align="center">
+  <h3>👩‍💻 Desenvolvido por</h3>
+  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
+  <p>
+    <a href="https://github.com/fer-isa">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+  </p>
+</div>
 
 ```
