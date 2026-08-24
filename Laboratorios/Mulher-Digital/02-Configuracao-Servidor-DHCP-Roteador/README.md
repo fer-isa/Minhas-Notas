@@ -51,7 +51,12 @@ Router(dhcp-config)# dns-server 8.8.8.8
 Router(dhcp-config)# exit
 Router(config)# exit
 Router# write
-✅ 4. Validação & Teste de ConectividadeClique no PC0 e navegue até a aba Desktop $\to$ IP Configuration.Alterne de Static para DHCP.Em poucos segundos, o protocolo DORA é concluído e o host recebe automaticamente:IP Address: 192.168.1.2Subnet Mask: 255.255.255.0Default Gateway: 192.168.1.1DNS Server: 8.8.8.8Repita o teste no PC1 para validar a entrega sequencial do IP 192.168.1.3.⚠️ 5. Troubleshooting (Resolução de Problemas no Simulador)Caso o Packet Tracer não atualize o leasing DHCP na interface gráfica:Acesse o PC0 $\to$ aba Config.Altere o campo Gateway/DNS para a opção DHCP / Automático.Retorne à aba Desktop $\to$ IP Configuration e repita a alternância para DHCP.Valide se todas as portas e links estão sinalizados com triângulos verdes ativos.📥 Arquivos do Laboratório💾 [Upload pendente: adicione o arquivo .pkt aqui]
+
+---
+
+✅ 4. Validação & Teste de ConectividadeClique no PC0 e navegue até a aba Desktop $\to$ IP Configuration.Alterne de Static para DHCP.Em poucos segundos, o protocolo DORA é concluído e o host recebe automaticamente:IP Address: 192.168.1.2Subnet Mask: 255.255.255.0Default Gateway: 192.168.1.1DNS Server: 8.8.8.8Repita o teste no PC1 para validar a entrega sequencial do IP 192.168.1.3.⚠️ 5. Troubleshooting (Resolução de Problemas no Simulador)Caso o Packet Tracer não atualize o leasing DHCP na interface gráfica:Acesse o PC0 $\to$ aba Config.Altere o campo Gateway/DNS para a opção DHCP / Automático.Retorne à aba Desktop $\to$ IP Configuration e repita a alternância para DHCP.Valide se todas as portas e links estão sinalizados com triângulos verdes ativos.📥 Arquivos do Laboratório💾 [📥 **Download do laboratório:**  
+[lab-dhcp-router-cisco.pkt](./lab-dhcp-router-cisco.pkt)
+
 ---
 
 **Passo 3: Salvar**
