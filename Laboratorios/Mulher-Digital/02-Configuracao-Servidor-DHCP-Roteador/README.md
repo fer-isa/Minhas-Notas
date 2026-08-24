@@ -1,8 +1,35 @@
-Entendi perfeitamente. O bloco de código (`bash`) não estava sendo fechado antes dos tópicos seguintes, fazendo com que todo o texto até o final ficasse preso dentro da caixa escura de terminal.
+# 🧪 Laboratório: Configuração de Servidor DHCP no Roteador
+**Formação Mulher Digital • Cisco Packet Tracer**
 
-Aqui está o trecho da seção 3 até a 6 com os blocos devidamente fechados para que as seções 4, 5 e 6 (o download) fiquem 100% normais e fora de blocos de código:
+</div>
 
-```markdown
+---
+
+## 📌 1. Objetivo da Atividade
+Configurar um roteador Cisco para atuar como **Servidor DHCP**, distribuindo de forma automatizada parâmetros de rede fundamentais (**Endereço IP**, **Máscara de Sub-rede**, **Gateway Padrão** e **Servidor DNS**) para os computadores da rede local (LAN).
+
+---
+
+## 🏗️ 2. Topologia & Montagem Física
+
+### **Equipamentos Utilizados**
+- **Roteador:** Cisco 2911  
+- **Switch:** Cisco Catalyst 2960  
+- **Hosts:** 2 PCs genéricos (`PC0` e `PC1`)  
+- **Cabos:** Copper Straight-Through  
+
+### **Mapeamento de Conexões**
+
+| Origem | Interface | Destino | Interface |
+|:---|:---|:---|:---|
+| PC0 | FastEthernet0 | Switch 2960 | FastEthernet0/1 |
+| PC1 | FastEthernet0 | Switch 2960 | FastEthernet0/2 |
+| Switch 2960 | FastEthernet0/24 | Roteador 2911 | GigabitEthernet0/0 |
+
+> ℹ️ **Nota:** PCs utilizam portas *FastEthernet (100 Mbps)*, enquanto o roteador Cisco 2911 opera com *GigabitEthernet (1 Gbps)*.
+
+---
+
 ## 💻 3. Configuração no Roteador (CLI)
 
 Acesse o CLI do roteador, recuse o assistente inicial (`no`) e aplique:
@@ -61,8 +88,10 @@ DNS Server:      8.8.8.8
 
 ## 📥 6. Arquivos do Laboratório
 
-> 📄 **Link direto:** [Clique aqui para baixar lab-dhcp-router-cisco.pkt](https://www.google.com/search?q=./lab-dhcp-router-cisco.pkt%3Fraw%3Dtrue)
+> 📄 **Link direto:** [Clique aqui para baixar lab-dhcp-router-cisco.pkt](https://www.google.com/search?q=lab-dhcp-router-cisco.pkt)
 
 ```
+
+4. Clique no botão verde **Commit changes...** no canto superior direito para salvar.
 
 ```
