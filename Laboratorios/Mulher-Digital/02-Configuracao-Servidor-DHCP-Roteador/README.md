@@ -85,11 +85,11 @@ DNS Server:      8.8.8.8
 * **Interface desligada:** Confirme se aplicou o comando `no shutdown` na interface `GigabitEthernet0/0` do roteador.
 
 ---
-
 ## 📥 6. Arquivos do Laboratório
 
-> 📄 **Link direto:** [Clique aqui para baixar lab-dhcp-router-cisco.pkt](https://www.google.com/search?q=lab-dhcp-router-cisco.pkt)
+[![Download PKT](https://img.shields.io/badge/Download-Laborat%C3%B3rio_.PKT-007ACC?style=for-the-badge&logo=cisco&logoColor=white)](https://github.com/fer-isa/Minhas-Notas/blob/main/Laboratorios/Mulher-Digital/02-Configuracao-Servidor-DHCP-Roteador/lab-dhcp-router-cisco.pkt)
 
+> 📄 **Link do arquivo:** [Acessar lab-dhcp-router-cisco.pkt](https://github.com/fer-isa/Minhas-Notas/blob/main/Laboratorios/Mulher-Digital/02-Configuracao-Servidor-DHCP-Roteador/lab-dhcp-router-cisco.pkt)
 ```
 
 4. Clique no botão verde **Commit changes...** no canto superior direito para salvar.
