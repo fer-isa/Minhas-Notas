@@ -21,12 +21,12 @@ Este espaço reúne todas as minhas anotações técnicas, materiais de estudo, 
 
 ### 🗂️ Estrutura de Conteúdo
 
-| Seção | Descrição | Link de Acesso |
-| :--- | :--- | :---: |
-| 🛡️ **Cibersegurança** | Conceitos fundamentais, vetores de ataque, defesa e laboratórios. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](https://github.com/fer-isa/Minhas-Notas/tree/main/Ciberseguranca) |
-| 💡 **Soft Skills** | Comunicação, perfil profissional, empregabilidade e mentalidade tech. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](https://github.com/fer-isa/Minhas-Notas/tree/main/Soft-Skills) |
-| 🎥 **Webinars** | Resumos e aprendizados dos encontros ao vivo e masterclasses. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](https://github.com/fer-isa/Minhas-Notas/tree/main/Webinars) |
-| 📄 **Assets** | Recursos complementares, arquivos de apoio e currículo. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](https://github.com/fer-isa/Minhas-Notas/tree/main/assets) |
+Clique para explorar os materiais e anotações:
+
+* 🛡️ [**Cibersegurança**](./Mulher-Digital/Ciberseguranca) — Conceitos fundamentais, ameaças, defesa e laboratórios.
+* 💡 [**Soft Skills**](./Mulher-Digital/Soft-Skills) — Comunicação, perfil profissional e mentalidade tech.
+* 🎥 [**Webinars**](./Mulher-Digital/Webinars) — Sínteses de encontros ao vivo, palestras e masterclasses.
+* 📄 [**Assets**](./Mulher-Digital/assets) — Recursos complementares, arquivos de apoio e currículo.
 
 
 ----
