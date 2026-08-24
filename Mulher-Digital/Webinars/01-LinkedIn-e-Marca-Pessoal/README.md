@@ -1,69 +1,111 @@
 <div align="center">
 
-# 💼 Webinar: LinkedIn e Marca Pessoal
-**Formação Mulher Digital • Masterclass & Desenvolvimento Profissional**
+  <h1>🧠 Soft Skills & Desenvolvimento Profissional</h1>
+  <p><b>Formação Mulher Digital • Trilha de Desenvolvimento de Carreira & Liderança</b></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Formação-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
+    <img src="https://img.shields.io/badge/Trilha-Soft_Skills_%26_Carreira-0A84FF?style=for-the-badge" alt="Carreira" />
+    <img src="https://img.shields.io/badge/Foco-Cibersegurança_%26_Redes-005073?style=for-the-badge" alt="Foco" />
+    <img src="https://img.shields.io/badge/Status-Ativo-success?style=for-the-badge" alt="Status" />
+  </p>
 
 </div>
 
----
+<hr/>
 
-## 📌 Visão Geral
-Síntese executiva do encontro ministrado por **Cris Mano** (Diretora de Marketing para a América Latina na Kyndryl), abordando a relevância estratégica do LinkedIn, a construção intencional da persona digital e o fortalecimento do posicionamento feminino no mercado tech.
+<h2>📌 1. Introdução</h2>
 
----
+<p>
+Mapeamento e estruturação de competências sociocomportamentais (<i>Soft Skills</i>), inteligência emocional aplicada ao ambiente corporativo e posicionamento estratégico de carreira desenvolvidos ao longo do programa <b>Mulher Digital</b>.
+</p>
 
-## 🎯 1. Diagnóstico do Público & Desafios
+<p>
+Este material consolida o perfil profissional, diferenciais de atuação, histórico acadêmico e técnico, além dos objetivos direcionados para o ecossistema de <b>Cibersegurança, Redes de Computadores e Suporte Técnico em TI</b>.
+</p>
 
-| Desafio Identificado | Impacto no Mercado | Abordagem Recomendada |
-| :--- | :--- | :--- |
-| **Síndrome da Impostora** | Hesitação em se candidatar caso não atenda a 100% dos requisitos descritos. | Candidatar-se a vagas atendendo à base essencial dos requisitos e apostar na curva de aprendizado. |
-| **Aversão à Exposição** | Medo de parecer autopromotora ou de sofrer julgamentos em público. | Enxergar a rede como compartilhamento genuíno de aprendizados e projetos, gerando valor mútuo. |
-| **Transição de Carreira** | Dúvida sobre como aproveitar trajetórias profissionais anteriores. | Assumir a transição com transparência, destacando competências transferíveis e bagagem acumulada. |
+<hr/>
 
----
+<details open>
+  <summary><h2>🪞 2. Identidade & Posicionamento Profissional</h2></summary>
+  <br/>
 
-## 🪞 2. Fundamentos da Persona Digital & SSI
+  <h3>📖 Trajetória e Perfil Técnico</h3>
+  <ul>
+    <li><b>Formação Acadêmica:</b> Graduada em Análise e Desenvolvimento de Sistemas (ADS) — Faculdade Descomplica Digital.</li>
+    <li><b>Capacitações e Certificações:</b>
+      <ul>
+        <li>Aluna da <b>Formação Mulher Digital</b> (Junior Achievement Américas) — Foco em Redes e Cibersegurança.</li>
+        <li><b>Programadora de Sistemas</b> — SENAC SP (<i>Programa Transforme-se</i>).</li>
+        <li>Preparação contínua para certificações <b>Google IT Support</b> e <b>Cisco CCNA</b>.</li>
+      </ul>
+    </li>
+    <li><b>Experiência Corporativa:</b> Atuação como assistente de projetos em consultoria de TI (<i>inventCloud Tecnologia</i>), unindo controle rigoroso de processos, validação de sistemas, gestão de SLAs operacionais e interface de comunicação entre equipes técnicas e gestores.</li>
+    <li><b>Objetivo de Carreira:</b> Atuação e transição orientada para as áreas de <b>Suporte Técnico (N1/Help Desk), Infraestrutura de Redes e Segurança da Informação</b>.</li>
+  </ul>
+</details>
 
-* **Primeira Impressão Digital:** A avaliação da postura e do histórico profissional por recrutadores ocorre online antes do primeiro contato em entrevista.
-* **Autenticidade e Coerência:** A persona deve espelhar competências reais e a voz genuína da profissional, garantindo integridade entre perfil e prática.
-* **Social Selling Index (SSI):** Métrica oficial do LinkedIn (0 a 100) que quantifica a relevância da marca pessoal e o engajamento na plataforma:
-  * **Meta Inicial:** Atingir **50+ pontos** para ampliar o alcance orgânico do perfil nas buscas de recrutadores.
+<hr/>
 
----
+<details open>
+  <summary><h2>🎯 3. Matriz de Competências Sociocomportamentais</h2></summary>
+  <br/>
 
-## 🚫 3. Desmistificando Crenças
+  <table width="100%">
+    <thead>
+      <tr bgcolor="#1f242c">
+        <th align="left" width="30%">Competência</th>
+        <th align="left" width="70%">Aplicação Prática no Ambiente de TI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🗣️ <b>Comunicação Estratégica</b></td>
+        <td>Facilitação do fluxo de informações e alinhamento claro de requisitos técnicos entre equipes de desenvolvimento, consultores, liderança e usuários finais.</td>
+      </tr>
+      <tr>
+        <td>🧩 <b>Resolução Crítica de Problemas</b></td>
+        <td>Análise investigativa de causas-raiz (<i>root cause analysis</i>), diagnóstico metódico de chamados e mitigação de gargalos em rotinas operacionais.</td>
+      </tr>
+      <tr>
+        <td>🤝 <b>Trabalho Colaborativo</b></td>
+        <td>Atuação integrada e ágil em times multidisciplinares (metodologias Scrum e Kanban), promovendo a troca de conhecimento e o cumprimento de metas coletivas.</td>
+      </tr>
+      <tr>
+        <td>🔄 <b>Adaptabilidade & Resiliência</b></td>
+        <td>Postura proativa de aprendizado contínuo (<i>Lifelong Learning</i>) frente a novos cenários, tecnologias emergentes, ferramentas e auditorias de conformidade.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-* ❌ **Mito 1: *"Marca pessoal é exibicionismo vazio."***  
-  ✔️ **Fato:** Trata-se de documentar sua evolução técnica, resolver dúvidas do setor e criar pontes de confiança no mercado.
-* ❌ **Mito 2: *"Preciso apagar todas as experiências anteriores ao mudar para TI."***  
-  ✔️ **Fato:** Lacunas no histórico geram desconfiança. O mercado valoriza a maturidade profissional e soft skills adquiridas em outras áreas.
-* ❌ **Mito 3: *"Basta curtir publicações para o algoritmo me notar."***  
-  ✔️ **Fato:** O algoritmo prioriza produção de conteúdo original e comentários contextualizados de alto valor.
+<hr/>
 
----
+<details open>
+  <summary><h2>📄 4. Documentos & Presença Profissional</h2></summary>
+  <br/>
 
-## 🛠️ 4. Guia Prático de Otimização do Perfil
+  <blockquote>
+    <b>⏳ Status Atual:</b> Portfólio técnico e documentações de laboratórios práticos em constante atualização e expansão no GitHub.
+  </blockquote>
 
-| Seção do Perfil | Ação Prática Recomendada |
-| :--- | :--- |
-| 📸 **Foto & Banner** | Foto nítida e profissional atualizada. Banner temático alinhado à área de Cibersegurança/TI. |
-| 📝 **Sobre / Resumo** | Estruturação em storytelling: trajetória, projetos acadêmicos/labs, tecnologias dominadas e objetivo. |
-| 🌟 **Recomendações** | Solicitação ativa de depoimentos a professores, instrutores e pares de projetos. |
-| 🤖 **Apoio de IA** | Utilização de ferramentas de IA para refinamento de texto, mantendo a autenticidade e tom próprio. |
+  <ul>
+    <li>🐙 <b>GitHub:</b> <a href="https://github.com/fer-isa"><code>github.com/fer-isa</code></a></li>
+    <li>🔗 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/fernanda-isabelli/"><code>linkedin.com/in/fernanda-isabelli</code></a></li>
+  </ul>
+</details>
 
----
+<hr/>
 
-## 🤝 5. Estratégia de Networking & Conexões
-
-* **Ampliação de Nível:** Conectar-se com lideranças, especialistas e referências das áreas almejadas, além de colegas de formação.
-* **Preservação da Rede:** Manter contatos de ciclos profissionais anteriores, enriquecendo a capilaridade da rede.
-* **Interação Proativa:** Participar de discussões técnicas, eventos online e debates em publicações de referências da indústria.
-
----
-
-## 📋 6. Plano de Ação
-
-- [ ] Acessar o painel do **LinkedIn SSI** e registrar a pontuação atual de referência.
-- [ ] Otimizar o título, banner e a seção **Sobre** com palavras-chave de Cibersegurança e Redes.
-- [ ] Realizar postagem técnica documentando os aprendizados da Formação Mulher Digital (`#mulherdigital`).
-- [ ] Solicitar as primeiras recomendações a colegas de curso e mentores.
+<div align="center">
+  <h3>👩‍💻 Desenvolvido por</h3>
+  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
+  <p>
+    <a href="https://github.com/fer-isa">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+  </p>
+</div>
