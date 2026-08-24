@@ -21,15 +21,12 @@ Este espaço reúne todas as minhas anotações técnicas, materiais de estudo, 
 
 ### 🗂️ Estrutura de Conteúdo
 
-Navegue diretamente pelas seções do módulo:
-
 | Seção | Descrição | Link de Acesso |
 | :--- | :--- | :---: |
-| 🛡️ **Cibersegurança** | Conceitos fundamentais, vetores de ataque, defesa e laboratórios. | <a href="./Ciberseguranca"><img src="https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white" alt="Acessar" /></a> |
-| 💡 **Soft Skills** | Comunicação, perfil profissional, empregabilidade e mentalidade tech. | <a href="./Soft-Skills"><img src="https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white" alt="Acessar" /></a> |
-| 🎥 **Webinars** | Resumos e aprendizados dos encontros ao vivo e masterclasses. | <a href="./Webinars"><img src="https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white" alt="Acessar" /></a> |
-| 📄 **Assets** | Recursos complementares, arquivos de apoio e currículo. | <a href="./assets"><img src="https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white" alt="Acessar" /></a> |
-
+| 🛡️ **Cibersegurança** | Conceitos fundamentais, vetores de ataque, defesa e laboratórios. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/Ciberseguranca) |
+| 💡 **Soft Skills** | Comunicação, perfil profissional, empregabilidade e mentalidade tech. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/Soft-Skills) |
+| 🎥 **Webinars** | Resumos e aprendizados dos encontros ao vivo e masterclasses. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/Webinars) |
+| 📄 **Assets** | Recursos complementares, arquivos de apoio e currículo. | [![Acessar](https://img.shields.io/badge/Acessar-0A84FF?style=flat-square&logo=github&logoColor=white)](tree/main/assets) |
 ---
 
 ### 🛠️ Competências em Desenvolvimento
