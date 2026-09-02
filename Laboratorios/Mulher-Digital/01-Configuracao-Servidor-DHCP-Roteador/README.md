@@ -64,3 +64,17 @@ Durante a configuração, enfrentei um problema real de rede que me exigiu inves
   <img src="https://github.com/user-attachments/assets/fe988890-46db-43f7-8fb0-0877256e50bc" width="700px"/>
   <p><i>Com o problema resolvido, utilizei o comando Ping para testar a conectividade. Houve sucesso tanto na comunicação com o Gateway (192.168.1.1) quanto na comunicação direta entre os dois computadores (192.168.1.11).</i></p>
 </div>
+<hr/>
+
+<div align="center">
+  <h3>👩‍💻 Desenvolvido por</h3>
+  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
+  <p>
+    <a href="https://github.com/fer-isa">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+  </p>
+</div>
