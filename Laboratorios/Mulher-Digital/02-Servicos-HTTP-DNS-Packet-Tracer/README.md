@@ -104,7 +104,20 @@ Para provar que a teoria funcionou na prática, executei os seguintes testes a p
   <i>Documentação do meu aprendizado contínuo. Focada em entender os fundamentos da camada de aplicação e processos de investigação técnica.</i>
 </div>
 
+<hr/>
 
+<div align="center">
+  <h3>👩‍💻 Desenvolvido por</h3>
+  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
+  <p>
+    <a href="https://github.com/fer-isa">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+  </p>
+</div>
 
 
 
