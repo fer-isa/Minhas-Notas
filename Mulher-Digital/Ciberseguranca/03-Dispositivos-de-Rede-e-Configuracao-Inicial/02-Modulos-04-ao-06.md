@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="../../assets/sua-imagem-aqui.png" width="180" alt="Emblema do Módulo" />
-  
   <h2>🌐 Comutação Ethernet & Camada de Rede — Módulos 4 ao 6</h2>
   <p><b>Formação Mulher Digital • Trilha de Cibersegurança & Infraestrutura</b></p>
   
@@ -112,3 +110,4 @@ O que fez a minha cabeça explodir nesse módulo foi entender como o Switch é a
     </a>
   </p>
 </div>
+
