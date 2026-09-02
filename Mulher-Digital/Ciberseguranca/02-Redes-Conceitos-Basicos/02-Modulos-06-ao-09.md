@@ -1,166 +1,117 @@
 <div align="center">
-
-  <h1>🌐 Conceitos Básicos de Redes — Módulos 6 ao 9 (Avançado)</h1>
+  <h2>🌐 Conceitos Básicos de Redes — Módulos 6 ao 9</h2>
   <p><b>Formação Mulher Digital • Trilha de Cibersegurança & Infraestrutura</b></p>
-
+  
   <p>
-    <img src="https://img.shields.io/badge/Cisco_Networking_Academy-Redes_Avançadas-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Redes Avançadas" />
-    <img src="https://img.shields.io/badge/Camadas-L2_%7C_L3_%7C_L7-0A84FF?style=for-the-badge" alt="Camadas OSI" />
+    <img src="https://img.shields.io/badge/Cisco_Networking_Academy-Redes_de_Computadores-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Redes" />
     <img src="https://img.shields.io/badge/Trilha-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
     <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
   </p>
-
 </div>
 
 <hr/>
 
-<h2>📌 Visão Geral</h2>
-
-<p>
-Este documento consolida o aprofundamento técnico em comunicação e infraestrutura de redes corporativas dos <b>Módulos 6 ao 9</b>, cobrindo os processos de <b>encapsulamento de dados</b>, esquemas de endereçamento e identificação (<b>MAC, IPv4, IPv6 e DNS</b>), segmentação corporativa (<b>Intranet, Extranet e NAT</b>), análise comparativa de topologias físicas e fundamentos de segurança defensiva.
-</p>
+<h3>📌 Visão Geral</h3>
+<p>Neste resumo, trago a lógica de como os dados são empacotados para viajar, como os computadores ganham "nomes e CPFs" (IP, MAC e DNS) e como as empresas desenham e protegem suas redes na vida real.</p>
 
 <hr/>
 
 <details open>
-  <summary><h2>📦 1. Modelos de Rede & Processo de Encapsulamento</h2></summary>
+  <summary><h3>📝 A "Rede de Papel" (Entendendo a Lógica)</h3></summary>
   <br/>
 
+  <p><b>1. Encapsulamento (A Boneca Russa)</b><br>
+  Quando você manda uma mensagem, ela não vai crua pra rede. Ela passa por um processo de empacotamento: o dado ganha um envelope (com os IPs de origem e destino) e depois é colocado dentro de uma "caixa" maior (o Quadro Ethernet, que recebe os endereços MAC) para conseguir viajar pelo cabo até o roteador.</p>
+
+  <p><b>2. Identidade na Rede: MAC, IP e DNS</b></p>
   <ul>
-    <li><b>Encapsulamento de Dados:</b> Processo sequencial no qual cada camada do modelo OSI/TCP/IP adiciona cabeçalhos (<i>headers</i>) e terminadores (<i>trailers</i>) com informações de controle à PDU à medida que os dados descem na pilha até a conversão final em bits físicos.</li>
-    <li><b>Quadro Ethernet (Layer 2 - Enlace):</b> Estrutura de dados que envelopa o pacote IP, adicionando endereços de controle de acesso ao meio (<b>MAC Address</b> de origem e destino) e códigos de verificação de redundância cíclica (CRC/FCS) para entrega física no mesmo segmento de rede.</li>
-    <li><b>Camada de Acesso:</b> Ponto de entrada que conecta os hosts finais à infraestrutura de agregação/núcleo, provendo autenticação, controle de portas e serviços locais.</li>
-    <li><b>Ethernet vs. Internet:</b>
-      <ul>
-        <li><b>Ethernet (IEEE 802.3):</b> Padrão físico e de enlace para transmissão e comutação de dados em redes locais (LAN).</li>
-        <li><b>Internet:</b> Malha global descentralizada de redes interconectadas que utiliza a pilha TCP/IP, sistemas autônomos (ASN) e roteamento de borda (BGP).</li>
-      </ul>
-    </li>
+    <li>🏷️ <b>Endereço MAC (O Chassi):</b> É o endereço físico da placa de rede. Ele vem gravado de fábrica e <i>nunca muda</i>. Serve para a comunicação local (dentro da mesma sala).</li>
+    <li>🏠 <b>Endereço IP (O CEP da casa):</b> É o endereço lógico. Ele <i>muda</i> dependendo de onde você está conectado (seu PC tem um IP na sua casa e outro diferente no Wi-Fi do shopping). Serve para achar você na internet.</li>
+    <li>📖 <b>DNS (A Agenda de Contatos):</b> Máquinas só entendem números (IPs). Nós preferimos nomes. O DNS é a agenda que traduz <code>www.google.com</code> para o IP correto dele.</li>
+  </ul>
+
+  <p><b>3. O Tamanho da Festa (Intranet, Extranet e Internet)</b></p>
+  <ul>
+    <li><b>Intranet:</b> A festa privada da empresa. Só funcionários com crachá (autenticados) podem entrar.</li>
+    <li><b>Extranet:</b> A área VIP. A empresa abre uma "porta lateral" segura para parceiros e fornecedores acessarem alguns sistemas.</li>
+    <li><b>Internet:</b> A praça pública, onde todo mundo se conecta.</li>
   </ul>
 </details>
 
 <hr/>
 
 <details open>
-  <summary><h2>🆔 2. Identificação e Resolução na Rede: MAC, IP e DNS</h2></summary>
+  <summary><h3>⚙️ A Prática (O que importa)</h3></summary>
   <br/>
 
+  <p><b>O famoso NAT (A mágica do Roteador)</b><br>
+  A internet ficou sem endereços IPv4, então inventaram o NAT. Ele age como o <b>porteiro de um prédio</b>: o mundo lá fora só vê o IP do porteiro (o IP público). Quando a correspondência chega, o porteiro traduz o endereço e entrega no apartamento certo (os IPs privados dos nossos celulares e PCs).</p>
+
+  <p><b>IPv4 vs. IPv6</b></p>
   <table width="100%">
     <thead>
       <tr bgcolor="#1f242c">
-        <th align="left" width="20%">Mecanismo</th>
-        <th align="center" width="18%">Camada OSI</th>
-        <th align="left" width="27%">Formato / Exemplo</th>
-        <th align="left" width="35%">Função Principal</th>
+        <th align="left">Protocolo</th>
+        <th align="left">Como é?</th>
+        <th align="left">Qual é a diferença?</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><b>Endereço MAC</b></td>
-        <td align="center">Enlace (Camada 2)</td>
-        <td>Hexadecimal (48 bits)<br/><code>00:1A:2B:3C:4D:5E</code></td>
-        <td>Identificador físico universal gravado permanentemente na placa de rede (NIC) para comunicação local.</td>
+        <td><b>IPv4</b></td>
+        <td><code>192.168.1.10</code></td>
+        <td>O modelo antigo. Tem "só" 4 bilhões de endereços e já esgotou. Usa números e pontos.</td>
       </tr>
       <tr>
-        <td><b>Endereço IP</b></td>
-        <td align="center">Rede (Camada 3)</td>
-        <td>Decimal pontuado (IPv4) ou Hexadecimal (IPv6)</td>
-        <td>Identificador lógico, hierárquico e globalmente roteável de localização do nó na topologia de rede.</td>
-      </tr>
-      <tr>
-        <td><b>DNS</b></td>
-        <td align="center">Aplicação (Camada 7)</td>
-        <td>Nomes FQDN<br/><code>www.cisco.com</code></td>
-        <td>Sistema de resolução que converte nomes de domínio amigáveis para endereços IP numéricos compreendidos pelas máquinas.</td>
+        <td><b>IPv6</b></td>
+        <td><code>2001:0db8::8a2e:0370</code></td>
+        <td>O modelo novo e infinito. Usa números, letras e dois-pontos. Já vem com segurança nativa.</td>
       </tr>
     </tbody>
   </table>
-</details>
 
-<hr/>
-
-<details open>
-  <summary><h2>🏢 3. Escopo Corporativo e Tradução de Endereços (NAT)</h2></summary>
-  <br/>
-
-  <h3>Segmentação de Acesso Corporativo</h3>
-  <ul>
-    <li><b>Intranet:</b> Rede interna privada, isolada por firewalls e destinada exclusivamente a colaboradores autenticados para acesso a sistemas e documentos internos.</li>
-    <li><b>Extranet:</b> Extensão controlada e segura da rede interna que permite o acesso autenticado a parceiros de negócios, fornecedores, terceiros ou clientes autorizados (frequentemente via VPNs).</li>
-  </ul>
-
-  <h3>NAT (<i>Network Address Translation</i>)</h3>
-  <ul>
-    <li><b>Objetivo Técnico:</b> Mapear e traduzir endereços IP privados internos (RFC 1918) para um ou mais endereços IP públicos válidos e roteáveis na Internet.</li>
-    <li><b>Benefícios Principais:</b> Mitigação do esgotamento do espaço IPv4 público e reforço de segurança por ofuscação da topologia e dos endereços dos hosts internos.</li>
-  </ul>
-</details>
-
-<hr/>
-
-<details open>
-  <summary><h2>🗺️ 4. Topologias Físicas & Protocolos IPv4 vs. IPv6</h2></summary>
-  <br/>
-
-  <h3>Comparativo de Topologias Físicas de Rede</h3>
-
+  <br>
+  
+  <p><b>Desenhos de Rede (Topologias)</b></p>
   <table width="100%">
     <thead>
       <tr bgcolor="#1f242c">
-        <th align="left" width="18%">Topologia</th>
-        <th align="left" width="30%">Estrutura Física</th>
-        <th align="left" width="26%">Vantagens</th>
-        <th align="left" width="26%">Desvantagens</th>
+        <th align="left">Topologia</th>
+        <th align="left">Como funciona na prática?</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><b>Estrela (Star)</b></td>
-        <td>Todos os nós são conectados individualmente a um concentrador central (Switch).</td>
-        <td>Isolamento simples de falhas; queda de um cabo não afeta os outros hosts.</td>
-        <td>Ponto único de falha no dispositivo central (switch/hub).</td>
+        <td><b>Estrela 🌟</b></td>
+        <td>Todo mundo ligado num Switch central. Se um cabo quebra, só aquele PC fica sem internet. (É a mais usada!)</td>
       </tr>
       <tr>
-        <td><b>Barramento (Bus)</b></td>
-        <td>Todos os dispositivos compartilham uma linha física única de comunicação (<i>backbone</i>).</td>
-        <td>Baixo consumo de cabeamento e custo inicial reduzido de implantação.</td>
-        <td>Alto risco de colisão de pacotes e interrupção total em caso de rompimento do cabo central.</td>
+        <td><b>Barramento 🚌</b></td>
+        <td>Um cabo central onde todo mundo se pendura. Se o cabo principal partir, a rede inteira cai.</td>
       </tr>
       <tr>
-        <td><b>Malha (Mesh)</b></td>
-        <td>Enlaces redundantes ponto a ponto diretos entre múltiplos dispositivos.</td>
-        <td>Máxima tolerância a falhas, alta resiliência e rotas alternativas automáticas.</td>
-        <td>Custo elevado de cabeamento e alta complexidade de expansão e manutenção.</td>
+        <td><b>Malha 🕸️</b></td>
+        <td>Todo mundo tem um cabo ligado direto a todo mundo. Se um cabo quebrar, tem vários outros caminhos. Super seguro, mas caríssimo.</td>
       </tr>
     </tbody>
   </table>
 
-  <h3>Diferenciais: Endereçamento IPv4 vs. IPv6</h3>
+  <br>
+  
+  <p><b>Hardening (Deixando a rede casca grossa)</b></p>
   <ul>
-    <li><b>IPv4:</b> Arquitetura de <b>32 bits</b> (representada em 4 octetos decimais separados por pontos, ex: <code>192.168.1.10</code>), totalizando aproximadamente 4,3 bilhões de endereços.</li>
-    <li><b>IPv6:</b> Arquitetura de <b>128 bits</b> (representada em 8 grupos de 4 dígitos hexadecimais separados por dois-pontos, ex: <code>2001:0db8:85a3::8a2e:0370:7334</code>), oferecendo espaço de endereçamento praticamente inesgotável ($3.4 \times 10^{38}$ endereços), cabeçalhos simplificados e suporte nativo ao protocolo IPsec.</li>
+    <li><b>Menor Privilégio:</b> Dar ao funcionário APENAS o acesso que ele precisa para trabalhar. Nada de dar senha de administrador pra todo mundo.</li>
+    <li><b>Gestão de Patches:</b> O famoso "manter tudo atualizado" para fechar brechas conhecidas pelos hackers.</li>
+    <li><b>Criptografia em Trânsito:</b> Embaralhar a mensagem para que ninguém consiga ler o que está passando no cabo (usar HTTPS, SSH, VPN).</li>
   </ul>
 </details>
 
 <hr/>
 
-<details open>
-  <summary><h2>🛡️ 5. Fundamentos de Segurança e Hardening de Rede</h2></summary>
-  <br/>
-
-  <ul>
-    <li><b>Firewalls (Borda e Host):</b> Sistemas de inspeção e filtragem de pacotes (<i>Stateless</i>, <i>Stateful Inspection</i> e <i>Next-Generation Firewalls - NGFW</i>) que controlam o fluxo com base em políticas de segurança, portas, protocolos e assinaturas de aplicações.</li>
-    <li><b>Hardening & Boas Práticas Operacionais:</b>
-      <ol>
-        <li><b>Gestão de Patches (Patch Management):</b> Aplicação contínua e homologada de atualizações de segurança para firmwares de roteadores/switches e sistemas operacionais.</li>
-        <li><b>Autenticação Forte & MFA:</b> Imposição de senhas complexas associadas a múltiplos fatores de autenticação para acessos administrativos.</li>
-        <li><b>Princípio do Menor Privilégio (Least Privilege):</b> Concessão estrita dos níveis mínimos de permissão indispensáveis para a execução de cada rotina.</li>
-        <li><b>Criptografia em Trânsito:</b> Desativação de protocolos inseguros em texto claro (como <code>Telnet</code> e <code>HTTP</code>) e adoção obrigatória de protocolos criptografados (<code>SSH</code>, <code>HTTPS</code> e <code>IPsec VPN</code>).</li>
-        <li><b>Auditoria e Monitoramento Contínuo:</b> Centralização e análise contínua de logs de tráfego (Syslog/SIEM) para identificação precoce de anomalias e tentativas de invasão.</li>
-      </ol>
-    </li>
-  </ul>
-</details>
+<h3>💡 Minha Visão (O Resumo da Fer)</h3>
+<p><i>
+O que fez a minha cabeça explodir nesse módulo foi finalmente entender como a internet não parou, mesmo com os endereços IPv4 acabando há anos. O conceito do NAT é genial! Pensar no roteador da minha casa como um porteiro que recebe as respostas da internet (com um IP público só) e distribui perfeitamente para o meu celular, para a minha TV e para o meu PC (usando IPs privados que a internet nem faz ideia que existem) fez tudo se encaixar. E sobre as topologias, ficou claro por que a rede em "Estrela" dominou o mercado: ninguém quer que a empresa inteira pare de trabalhar só porque um único cabo quebrou.
+</i></p>
 
 <hr/>
 
