@@ -1,185 +1,104 @@
 <div align="center">
-
-  <img src="../../assets/introduction-to-cybersecurity.png" width="180" alt="Conceitos Básicos de Redes - Módulos 10 ao 15" />
-
-  <h1>🌐 Conceitos Básicos de Redes — Módulos 10 ao 15</h1>
+  <h2>🌐 Conceitos Básicos de Redes — Módulos 10 ao 15</h2>
   <p><b>Formação Mulher Digital • Trilha de Cibersegurança & Infraestrutura</b></p>
-
+  
   <p>
     <img src="https://img.shields.io/badge/Cisco_Networking_Academy-Roteamento_%26_IP-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Roteamento" />
     <img src="https://img.shields.io/badge/Protocolos-DHCP_%7C_DNS_%7C_ARP-0A84FF?style=for-the-badge" alt="Protocolos" />
     <img src="https://img.shields.io/badge/Trilha-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
     <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
   </p>
-
 </div>
 
 <hr/>
 
-<h2>📌 Visão Geral</h2>
-
-<p>
-Este documento consolida o fechamento da trilha de redes de computadores dos <b>Módulos 10 ao 15</b>, abrangendo o esquema estrutural de endereçamento IP (<b>IPv4 e IPv6</b>), segmentação de escopos públicos e privados, protocolos essenciais de infraestrutura e resolução (<b>DHCP, DNS e ARP</b>), mecânica de roteamento de Camada 3 e ferramentas de diagnóstico via linha de comando (CLI).
-</p>
+<h3>📌 Visão Geral</h3>
+<p>O fechamento da nossa base de redes! Aqui desmistificamos como os IPs e as máscaras funcionam, os 3 protocolos mágicos que fazem a rede ter vida (DHCP, DNS e ARP), como os roteadores escolhem caminhos e os comandos essenciais para testar se tudo está funcionando.</p>
 
 <hr/>
 
 <details open>
-  <summary><h2>🔢 1. Endereçamento IP e Máscaras de Sub-rede</h2></summary>
+  <summary><h3>📝 A "Rede de Papel" (Entendendo a Lógica)</h3></summary>
   <br/>
 
+  <p><b>1. Endereço IP e a Máscara (Rua e Casa)</b><br>
+  Todo IP é dividido em duas partes. A <b>Máscara de Sub-rede</b> é o "muro" que separa essas duas coisas: ela diz aos equipamentos até onde vai o nome da rua (A Rede) e onde começa o número da casa (O Host).</p>
+
+  <p><b>2. IPs Públicos vs. Privados</b></p>
   <ul>
-    <li><b>Estrutura do Endereço IP:</b> Cada endereço lógico é hierarquicamente dividido em duas partes fundamentais: a identificação da rede (<b>Network ID</b>) e a identificação exclusiva da estação na rede (<b>Host ID</b>).</li>
-    <li><b>Máscara de Sub-rede:</b> Sequência de 32 bits formada por bits contíguos em <code>1</code> seguidos de bits em <code>0</code>, utilizada pelo dispositivo para delimitar a fronteira exata entre a porção de rede e a porção de host. É comumente expressa na notação decimal (<code>255.255.255.0</code>) ou <b>CIDR</b> (<code>/24</code>).</li>
+    <li>🌍 <b>IP Público:</b> É o endereço oficial da sua casa na internet. Só existe um no mundo inteiro e é roteável em qualquer lugar.</li>
+    <li>🏠 <b>IP Privado:</b> É o apelido que você dá para os cômodos de casa (Quarto 1, Quarto 2). A internet lá fora não faz ideia de quem são eles; só o seu roteador local os conhece.</li>
   </ul>
 
-  <h3>Tabela Comparativa: IPv4 vs. IPv6</h3>
-
-  <table width="100%">
-    <thead>
-      <tr bgcolor="#1f242c">
-        <th align="left" width="22%">Característica</th>
-        <th align="left" width="38%">IPv4</th>
-        <th align="left" width="40%">IPv6</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><b>Comprimento do Endereço</b></td>
-        <td>32 bits (4 octetos)</td>
-        <td>128 bits (8 hextetos)</td>
-      </tr>
-      <tr>
-        <td><b>Formato de Notação</b></td>
-        <td>Decimal pontuado (ex: <code>192.168.1.50</code>)</td>
-        <td>Hexadecimal com dois-pontos (ex: <code>2001:0db8:85a3::1</code>)</td>
-      </tr>
-      <tr>
-        <td><b>Espaço de Endereçamento</b></td>
-        <td>~4,29 bilhões ($2^{32}$) de endereços</td>
-        <td>~340 undecilhões ($2^{128}$) de endereços</td>
-      </tr>
-      <tr>
-        <td><b>Dependência de NAT</b></td>
-        <td>Alta dependência para contornar o esgotamento</td>
-        <td>Desnecessário (restaura o modelo de conectividade ponta a ponta)</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
-
-<hr/>
-
-<details open>
-  <summary><h2>🌍 2. Escopos de Endereçamento: IPs Públicos, Privados e Escopo IPv6</h2></summary>
-  <br/>
-
-  <h3>Arquitetura no IPv4</h3>
+  <p><b>3. O Jeito de Falar (Modos de Transmissão)</b></p>
   <ul>
-    <li><b>IPs Públicos:</b> Endereços globais exclusivos e roteáveis na Internet, alocados pela IANA/ISPs para permitir comunicação externa.</li>
-    <li><b>IPs Privados (RFC 1918):</b> Faixas reservadas exclusivamente para comunicação em redes locais (LANs), bloqueadas para tráfego direto na Internet:
-      <ul>
-        <li>Classe A: <code>10.0.0.0/8</code> (de <code>10.0.0.0</code> a <code>10.255.255.255</code>)</li>
-        <li>Classe B: <code>172.16.0.0/12</code> (de <code>172.16.0.0</code> a <code>172.31.255.255</code>)</li>
-        <li>Classe C: <code>192.168.0.0/16</code> (de <code>192.168.0.0</code> a <code>192.168.255.255</code>)</li>
-      </ul>
-    </li>
-    <li><b>NAT (<i>Network Address Translation</i>):</b> Mecanismo implementado no roteador de borda para traduzir múltiplos IPs privados da LAN para um único IP público válido durante o envio de pacotes à WAN.</li>
-  </ul>
-
-  <h3>Arquitetura no IPv6</h3>
-  <ul>
-    <li><b>GUA (<i>Global Unicast Address</i>):</b> Equivalente funcional ao IP público no IPv4; globalmente exclusivo e diretamente roteável na Internet (inicia tipicamente no bloco <code>2000::/3</code>).</li>
-    <li><b>ULA (<i>Unique Local Address</i>):</b> Equivalente ao IP privado; utilizado para comunicação estritamente local em intranets sem rota na Internet pública (prefixos <code>fc00::/7</code> e <code>fd00::/8</code>).</li>
+    <li>📞 <b>Unicast:</b> Uma ligação telefônica privada. Um fala direto com o outro (1 para 1).</li>
+    <li>📢 <b>Broadcast:</b> Pegar um megafone e gritar no meio da sala. Todos os computadores da rede local escutam (1 para Todos).</li>
+    <li>💬 <b>Multicast:</b> Mandar mensagem num grupo do WhatsApp. Só recebe quem faz parte daquele grupo específico (1 para Alguns).</li>
   </ul>
 </details>
 
 <hr/>
 
 <details open>
-  <summary><h2>🛠️ 3. Protocolos Fundamentais de Infraestrutura e Descoberta</h2></summary>
+  <summary><h3>⚙️ A Prática (O que importa)</h3></summary>
   <br/>
 
+  <p><b>Os 3 Protocolos Salva-Vidas</b></p>
   <table width="100%">
     <thead>
       <tr bgcolor="#1f242c">
-        <th align="left" width="18%">Protocolo</th>
-        <th align="center" width="18%">Camada OSI</th>
-        <th align="left" width="30%">Função Operacional</th>
-        <th align="left" width="34%">Mecânica de Funcionamento</th>
+        <th align="left">Protocolo</th>
+        <th align="left">O que faz na prática?</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><b>DHCP</b></td>
-        <td align="center">Aplicação (Camada 7)</td>
-        <td>Atribuição automática e dinâmica de parâmetros de rede (IP, Máscara, Gateway, DNS).</td>
-        <td>Processo <b>DORA</b> em 4 etapas:<br/><b>D</b>iscover $\to$ <b>O</b>ffer $\to$ <b>R</b>equest $\to$ <b>A</b>cknowledge.</td>
+        <td>O recepcionista automático. Quando você conecta o cabo, ele te empresta um IP, uma máscara e um gateway para você poder navegar sem configurar nada à mão.</td>
       </tr>
       <tr>
         <td><b>DNS</b></td>
-        <td align="center">Aplicação (Camada 7)</td>
-        <td>Resolução de nomes de domínio amigáveis em endereços IP roteáveis.</td>
-        <td>Estrutura hierárquica e distribuída de servidores (Root, TLD, Autoritativo).</td>
+        <td>A agenda telefônica da internet. Transforma nomes fáceis (<i>google.com</i>) nos números IP que as máquinas precisam para se achar.</td>
       </tr>
       <tr>
         <td><b>ARP</b></td>
-        <td align="center">Enlace / Rede (Camadas 2/3)</td>
-        <td>Mapeamento do endereço físico MAC de destino a partir de um IP conhecido.</td>
-        <td>Disparo de requisição em <i>Broadcast</i> local (<code>ARP Request</code>) e resposta em <i>Unicast</i> (<code>ARP Reply</code>).</td>
+        <td>O detetive da rede local. Ele grita (Broadcast): <i>"Quem é o dono do IP 192.168.1.10? Me dê o seu endereço físico (MAC)!"</i></td>
       </tr>
     </tbody>
   </table>
-</details>
 
-<hr/>
+  <br>
 
-<details open>
-  <summary><h2>🛣️ 4. Modos de Transmissão & Mecânica de Roteamento</h2></summary>
-  <br/>
-
-  <h3>Modos de Transmissão de Dados</h3>
+  <p><b>Como o Roteador escolhe o caminho (Rotas)</b></p>
   <ul>
-    <li><b>Unicast:</b> Comunicação ponto a ponto entre um transmissor exclusivo e um único receptor específico (relação 1:1).</li>
-    <li><b>Broadcast:</b> Envio simultâneo de pacotes de um nó para todos os dispositivos pertencentes ao mesmo domínio de difusão (relação 1:Todos).</li>
-    <li><b>Multicast:</b> Envio de pacotes de uma origem para um conjunto específico e previamente inscrito de hosts clientes (relação 1:Muitos).</li>
+    <li><b>Rota Estática:</b> O administrador digita o caminho na mão. É seguro, mas dá muito trabalho se a rede for grande.</li>
+    <li><b>Rota Dinâmica (OSPF / RIP):</b> É o "Waze" dos roteadores. Eles conversam entre si e recalculam a rota sozinhos se um cabo quebrar no meio do caminho.</li>
   </ul>
 
-  <h3>Tipos de Rotas na Tabela de Roteamento (Camada 3)</h3>
-  <ul>
-    <li><b>Rotas Diretamente Conectadas:</b> Redes vinculadas diretamente às interfaces físicas ativas e configuradas no roteador.</li>
-    <li><b>Rotas Estáticas:</b> Caminhos de rede configurados e mantidos manualmente pelo administrador, com baixa sobrecarga de processamento.</li>
-    <li><b>Rotas Dinâmicas:</b> Aprendizado e convergência automática de tabelas de rotas através de protocolos de roteamento:
-      <ul>
-        <li><b>RIP (<i>Routing Information Protocol</i>):</b> Protocolo vetor de distância baseado em contagem de saltos (máximo de 15 saltos).</li>
-        <li><b>OSPF (<i>Open Shortest Path First</i>):</b> Protocolo estado de enlace (*Link-State*) que calcula o caminho mais curto com base em custo e largura de banda.</li>
-      </ul>
-    </li>
-  </ul>
-</details>
-
-<hr/>
-
-<details open>
-  <summary><h2>💻 5. Diagnóstico e Solução de Problemas via CLI</h2></summary>
-  <br/>
-
-  <p>Comandos essenciais utilizados no Prompt de Comando / Terminal para verificação e troubleshooting de rede:</p>
-
+  <br>
+<p><b>Comandos Mágicos (A "Tela Preta")</b></p>
   <pre>
-# 1. Exibir detalhes completos de adaptadores de rede, MAC, IP, Gateway e DHCP
+    
+ #### Mostra o seu IP, sua Máscara e o seu endereço MAC físico
 ipconfig /all
 
-# 2. Exibir a tabela de cache ARP (mapeamento de endereços IP vinculados a MACs na rede local)
+ #### Mostra a lista de quem o seu computador já conhece na rede local (IP associado ao MAC)
 arp -a
 
-# 3. Rastrear cada salto (hop) de roteadores intermediários até o endereço de destino
-tracert 8.8.8.8
+ #### Testa se a internet está chegando até o destino (ex: tenta bater na porta do Google)
+ping 8.8.8.8
 
-# 4. Testar a conectividade ICMP e medir o tempo de ida e volta (RTT) dos pacotes
-ping 192.168.1.1
+ #### Mostra o caminho exato e todos os roteadores por onde o seu pacote passou até o destino
+tracert 8.8.8.8
   </pre>
-</details>
+
+<hr/>
+
+<h3>💡 Minha Visão (O Resumo da Fer)</h3>
+<p><i>
+O maior "clique" que eu tive ao fechar esses módulos foi ver a mágica acontecendo por trás dos panos quando a gente liga um computador novo na rede. Entender que o PC entra "cego", grita na rede pedindo um IP pro DHCP e depois usa o detetive ARP para descobrir com quem ele precisa falar, me fez perceber que a rede é uma grande conversa constante entre as máquinas. Outra coisa que adorei foi usar o comando <code>tracert</code> no Packet Tracer. Ver o caminho exato, pulando de roteador em roteador até chegar no destino, tira a internet daquela "nuvem abstrata" e mostra que tudo é físico e muito bem arquitetado!
+</i></p>
 
 <hr/>
 
