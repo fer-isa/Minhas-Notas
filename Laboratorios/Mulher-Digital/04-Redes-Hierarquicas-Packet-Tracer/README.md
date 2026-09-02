@@ -19,7 +19,7 @@
 <p>A ideia aqui é organizar a casa: segmentar o ambiente fisicamente, passar os cabos corretamente respeitando as velocidades das portas e configurar o endereçamento IP estático para que os computadores consigam chegar até o roteador de saída (Core).</p>
 
 <div align="center">
-  <!-- ARRASTE A FOTO DA SUA TOPOLOGIA AQUI E APAGUE ESTA LINHA -->
+  <img width="792" height="647" alt="image" src="https://github.com/user-attachments/assets/00918893-4a6b-452d-8a0f-d82ab08b951b" />
   <p><i>A divisão clássica: Roteador no topo (Núcleo), Switch parrudo no meio (Distribuição) e Switches menores na base (Acesso).</i></p>
 </div>
 
@@ -147,7 +147,8 @@ Router(config-if)# exit
     <b>O mistério da Porta Gigabit 24:</b> Na hora de montar a topologia, acabei selecionando o switch 3550 por engano. Fiquei super encucada porque não conseguia achar a porta "Gigabit 24" para fazer a conexão principal de jeito nenhum! Só depois de investigar, percebi o erro e troquei para o modelo correto (Catalyst 3650). Foi uma lição muito real sobre como validar o modelo exato do hardware antes de começar.
   </li>
   <li>
-    <b>A lógica do cabeamento:</b> Tive um pouco de dificuldade na hora de puxar os cabos, na dúvida se deveria conectar primeiro do roteador para o switch ou o contrário. Acabei descobrindo que o cabo direto não tem um "lado certo" para começar a plugar, mas esse momento de dúvida me ajudou a fixar melhor como o simulador organiza as portas.
+    <li>
+    <b>A lógica e a ordem do cabeamento:</b> Tive dúvida na hora de puxar os cabos, sem saber se deveria plugar primeiro saindo do roteador para o switch ou o contrário. Fui orientada pela professora que a ordem de conexão importa muito! No simulador (e nas boas práticas da Cisco), seguir a hierarquia correta na hora de ligar os equipamentos ajuda a organizar as portas e evita bugs no sistema de avaliação do Packet Tracer, que registra exatamente qual equipamento é a origem e qual é o destino do cabo.
   </li>
 </ul>
 
