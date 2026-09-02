@@ -1,67 +1,61 @@
-<div align="center">
-
+  <div align="center">
   <img src="../../assets/introduction-to-cybersecurity.png" width="180" alt="Conceitos Básicos de Redes" />
-
-  <h1>🌐 Conceitos Básicos de Redes — Módulos 1 ao 5</h1>
+  
+  <h2>🌐 Conceitos Básicos de Redes — Módulos 1 ao 5</h2>
   <p><b>Formação Mulher Digital • Trilha de Cibersegurança & Infraestrutura</b></p>
-
+  
   <p>
     <img src="https://img.shields.io/badge/Cisco_Networking_Academy-Redes_de_Computadores-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Redes" />
     <img src="https://img.shields.io/badge/Modelos-OSI_%7C_TCP%2FIP-0A84FF?style=for-the-badge" alt="OSI e TCP/IP" />
     <img src="https://img.shields.io/badge/Trilha-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
     <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
   </p>
-
 </div>
 
 <hr/>
 
-<h2>📌 Visão Geral</h2>
-
-<p>
-Este documento consolida os conceitos essenciais de arquitetura e infraestrutura de redes de computadores dos <b>Módulos 1 ao 5</b>, abrangendo desde a taxonomia e escopo geográfico de redes até os modelos de comunicação em camadas (<b>Modelo OSI</b> e <b>Pilha TCP/IP</b>), dispositivos de interconexão e meios físicos de transmissão.
-</p>
+<h3>📌 O que tem neste resumo?</h3>
+<p>Aqui juntei os conceitos que são o "feijão com arroz" da infraestrutura de redes. O objetivo é explicar de forma simples como os computadores conversam entre si, os tipos de redes, os equipamentos que usamos e como funcionam os modelos de camadas (OSI e TCP/IP).</p>
 
 <hr/>
 
 <details open>
-  <summary><h2>🏗️ Módulo 1: Fundamentos, Escopo e Unidades de Medida</h2></summary>
+  <summary><h3>🏗️ Módulo 1: Fundamentos, Escopo e Tamanho</h3></summary>
   <br/>
 
   <ul>
-    <li><b>Definição de Rede:</b> Conjunto de dispositivos autônomos interconectados por meios físicos ou sem fio que compartilham dados, recursos e serviços através de protocolos padronizados.</li>
-    <li><b>Classificação por Escopo Organizacional:</b>
+    <li><b>O que é uma Rede?</b> São equipamentos conectados entre si (por cabo ou Wi-Fi) para compartilhar coisas (arquivos, internet, impressora, etc.).</li>
+    <li><b>Tamanhos de Rede:</b>
       <ul>
-        <li><b>Rede Doméstica:</b> Conexão local simplificada de computadores e dispositivos móveis centralizados por um roteador Wi-Fi integrado.</li>
-        <li><b>SOHO (Small Office / Home Office):</b> Estrutura compacta desenhada para pequenos escritórios, comércio local e ambientes de teletrabalho.</li>
-        <li><b>Média e Grande Empresa:</b> Infraestruturas complexas e altamente segmentadas com switches gerenciáveis, roteadores dedicados, firewalls corporativos e alta redundância.</li>
+        <li><b>Doméstica:</b> A rede da nossa casa, geralmente com um roteador Wi-Fi simples conectando celulares e TVs.</li>
+        <li><b>SOHO (Pequeno Escritório):</b> Uma rede um pouco mais estruturada para pequenos negócios ou quem trabalha de casa (Home Office).</li>
+        <li><b>Empresa (Média/Grande):</b> Redes complexas, divididas em vários pedaços, com equipamentos pesados e segurança forte.</li>
       </ul>
     </li>
   </ul>
 
-  <h3>📊 Unidades de Medida em Redes</h3>
-
+  <p><b>Unidades de Medida</b></p>
   <table width="100%">
     <thead>
       <tr bgcolor="#1f242c">
-        <th align="left" width="20%">Unidade</th>
-        <th align="center" width="15%">Símbolo</th>
-        <th align="left" width="35%">Definição Conceitual</th>
-        <th align="left" width="30%">Aplicação Principal</th>
+        <th align="left">Unidade</th>
+        <th align="center">Símbolo</th>
+        <th align="left">O que é?</th>
+        <th align="left">Onde usamos?</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><b>Bit</b></td>
-        <td align="center"><code>b</code></td>
-        <td>Menor unidade elementar de informação binária (0 ou 1).</td>
-        <td>Taxas de transmissão e largura de banda (ex: Mbps, Gbps).</td>
+        <td align="center"><code>b</code> (minúsculo)</td>
+        <td>A menor pecinha de informação do computador (0 ou 1).</td>
+        <td>Para medir a <b>velocidade</b> da internet (ex: 100 Mbps).</td>
       </tr>
       <tr>
         <td><b>Byte</b></td>
-        <td align="center"><code>B</code></td>
-        <td>Conjunto ordenado de 8 bits (representa 1 caractere).</td>
-        <td>Capacidade de armazenamento e tamanho de arquivos (ex: MB, GB).</td>
+        <td align="center"><code>B</code> (maiúsculo)</td>
+        <td>Um pacotinho com 8 bits juntos.</td>
+        <td>Para medir o <b>tamanho</b> de um arquivo (ex: 2 GB).</td>
       </tr>
     </tbody>
   </table>
@@ -70,51 +64,50 @@ Este documento consolida os conceitos essenciais de arquitetura e infraestrutura
 <hr/>
 
 <details open>
-  <summary><h2>🖥️ Módulo 2: Arquitetura, Dispositivos e Classificação Geográfica</h2></summary>
+  <summary><h3>🖥️ Módulo 2: Como a Rede se Organiza</h3></summary>
   <br/>
 
-  <h3>Modelos de Comunicação</h3>
+  <p><b>Como eles conversam?</b></p>
   <ul>
-    <li><b>Cliente-Servidor:</b> O dispositivo <i>Cliente</i> requisita serviços ou dados e o <i>Servidor</i> centralizado processa, autentica e entrega a resposta (ex: Servidores Web, DNS, E-mail, Banco de Dados).</li>
-    <li><b>Ponto a Ponto (P2P / Peer-to-Peer):</b> Todos os nós da rede operam simultaneamente como clientes e servidores, compartilhando recursos sem dependência de um servidor centralizado.</li>
+    <li><b>Cliente-Servidor:</b> Um lado pede (o celular) e o outro lado entrega (o servidor do Google). É como um cliente num restaurante fazendo o pedido ao garçom.</li>
+    <li><b>Ponto a Ponto (P2P):</b> Todo mundo é cliente e servidor ao mesmo tempo. As máquinas trocam arquivos diretamente umas com as outras.</li>
   </ul>
 
-  <h3>Dispositivos de Rede</h3>
+  <p><b>Os Equipamentos</b></p>
   <ul>
-    <li><b>Dispositivos Finais (Hosts / End Devices):</b> Equipamentos que atuam como origem ou destino final do fluxo de dados (PCs, laptops, servidores, impressoras de rede, smartphones).</li>
-    <li><b>Dispositivos Intermediários:</b> Equipamentos que gerenciam o fluxo, regeneram sinais, tomam decisões de encaminhamento e asseguram a conectividade (switches de Camada 2/3, roteadores de borda, firewalls, pontos de acesso wireless).</li>
+    <li><b>Dispositivos Finais:</b> Onde a informação nasce ou termina. São os nossos aparelhos (PC, celular, impressora).</li>
+    <li><b>Dispositivos Intermediários:</b> Os "guardas de trânsito" da rede. Eles decidem o melhor caminho para os dados passarem (Switches e Roteadores).</li>
   </ul>
 
-  <h3>Classificação por Abrangência Geográfica</h3>
-
+  <p><b>Classificação por Distância</b></p>
   <table width="100%">
     <thead>
       <tr bgcolor="#1f242c">
-        <th align="left" width="15%">Sigla</th>
-        <th align="left" width="35%">Nome Completo</th>
-        <th align="left" width="50%">Escopo / Raio de Cobertura</th>
+        <th align="left">Sigla</th>
+        <th align="left">Nome</th>
+        <th align="left">Qual é o tamanho?</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><b>PAN</b></td>
-        <td><i>Personal Area Network</i></td>
-        <td>Rede de espaço pessoal de curtíssimo alcance (tecnologia Bluetooth, periféricos sem fio, smartwatches).</td>
+        <td>Rede Pessoal</td>
+        <td>Curtíssimo alcance, pertinho do seu corpo (ex: fone Bluetooth).</td>
       </tr>
       <tr>
         <td><b>LAN</b></td>
-        <td><i>Local Area Network</i></td>
-        <td>Rede local com limites geográficos restritos (residência, laboratório acadêmico, escritório, andar de edifício).</td>
+        <td>Rede Local</td>
+        <td>Tamanho de uma casa, sala de aula ou escritório.</td>
       </tr>
       <tr>
         <td><b>MAN</b></td>
-        <td><i>Metropolitan Area Network</i></td>
-        <td>Rede metropolitana que interliga múltiplos prédios e campi dentro dos limites de uma cidade ou região.</td>
+        <td>Rede Metropolitana</td>
+        <td>Tamanho de uma cidade inteira.</td>
       </tr>
       <tr>
         <td><b>WAN</b></td>
-        <td><i>Wide Area Network</i></td>
-        <td>Rede de longa distância que conecta diferentes cidades, estados, países e continentes (ex: a Internet).</td>
+        <td>Rede de Longa Distância</td>
+        <td>Conecta países e continentes (a própria Internet é uma WAN).</td>
       </tr>
     </tbody>
   </table>
@@ -123,15 +116,15 @@ Este documento consolida os conceitos essenciais de arquitetura e infraestrutura
 <hr/>
 
 <details open>
-  <summary><h2>📡 Módulo 3: Meios Físicos de Transmissão & Redes Sem Fio</h2></summary>
+  <summary><h3>📡 Módulo 3: Cabos e Wi-Fi</h3></summary>
   <br/>
 
   <ul>
-    <li><b>Redes Sem Fio (Wireless / WLAN):</b> Propagação de sinais de dados através de ondas de radiofrequência (espectro 2.4 GHz e 5 GHz), oferecendo mobilidade aos clientes (padrões IEEE 802.11).</li>
-    <li><b>Meios de Transmissão Cabeados:</b>
+    <li><b>Wi-Fi (Redes Sem Fio):</b> Usa ondas de rádio invisíveis no ar para enviar os dados, dando mobilidade pra gente andar pela casa.</li>
+    <li><b>Cabos (Meios Físicos):</b>
       <ul>
-        <li><b>Par Trançado de Cobre (UTP / STP):</b> Utiliza pulsos elétricos para transmissão em distâncias de até 100 metros. O trançamento dos pares cancela interferências eletromagnéticas (EMI) e ruídos de <i>crosstalk</i>.</li>
-        <li><b>Fibra Óptica (Monomodo e Multimodo):</b> Transmissão de dados na forma de pulsos de luz em núcleos de vidro, imune a interferências eletromagnéticas e ideal para enlaces de longa distância e altíssima largura de banda.</li>
+        <li><b>Cabo de Cobre (Trançado):</b> O famoso cabo de rede azul. Usa energia elétrica para enviar dados até 100 metros. Os fios são trançados por dentro para evitar chiados (interferência).</li>
+        <li><b>Fibra Óptica:</b> Usa luz para enviar dados em vez de energia. É super rápida, imune a interferências de energia e consegue viajar por quilômetros de distância.</li>
       </ul>
     </li>
   </ul>
@@ -140,55 +133,48 @@ Este documento consolida os conceitos essenciais de arquitetura e infraestrutura
 <hr/>
 
 <details open>
-  <summary><h2>📐 Módulos 4 & 5: Modelos Conceituais em Camadas e Protocolos</h2></summary>
+  <summary><h3>📐 Módulos 4 & 5: Modelos OSI e TCP/IP</h3></summary>
   <br/>
 
-  <p>
-    Os <b>protocolos de rede</b> constituem o conjunto formal de regras, sintaxes e padrões que viabilizam a comunicação e interoperabilidade entre sistemas heterogêneos.
-  </p>
-
-  <h3>Comparativo Estruturado: Modelo OSI vs. Pilha TCP/IP</h3>
+  <p>Para computadores de marcas diferentes conseguirem conversar, eles precisam falar as mesmas "línguas" (os protocolos). Para organizar isso, usamos modelos divididos em camadas.</p>
 
   <table width="100%">
     <thead>
       <tr bgcolor="#1f242c">
-        <th align="left" width="30%">Camada Modelo OSI (7 Camadas)</th>
-        <th align="left" width="30%">Camada Pilha TCP/IP (4 Camadas)</th>
-        <th align="left" width="40%">Exemplos de Protocolos & PDUs</th>
+        <th align="left">Modelo OSI (Na Teoria)</th>
+        <th align="left">TCP/IP (Na Prática)</th>
+        <th align="left">O que rola aqui? (Exemplos)</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><b>7. Aplicação</b></td>
-        <td rowspan="3" valign="middle"><b>Aplicação</b><br/><i>(Interface de usuário e serviços de rede)</i></td>
-        <td><code>HTTP</code>, <code>HTTPS</code>, <code>DNS</code>, <code>DHCP</code>, <code>SSH</code>, <code>FTP</code></td>
+        <td rowspan="3" valign="middle"><b>Aplicação</b><br/><i>(Os programas e a tela)</i></td>
+        <td rowspan="3" valign="middle">É onde a gente clica e interage. Protocolos de site (<code>HTTP</code>), e-mail e <code>DNS</code>.</td>
       </tr>
       <tr>
         <td><b>6. Apresentação</b></td>
-        <td><code>SSL/TLS</code>, <code>JPEG</code>, <code>ASCII</code>, <code>MIME</code></td>
       </tr>
       <tr>
         <td><b>5. Sessão</b></td>
-        <td><code>NetBIOS</code>, <code>RPC</code>, <code>PPTP</code></td>
       </tr>
       <tr>
         <td><b>4. Transporte</b></td>
-        <td valign="middle"><b>Transporte</b><br/><i>(Controle de fluxo e integridade de ponta a ponta)</i></td>
-        <td><code>TCP</code> (Orientado à conexão), <code>UDP</code> (Sem conexão)<br/><b>PDU:</b> Segmento / Datagrama</td>
+        <td valign="middle"><b>Transporte</b><br/><i>(Controle da entrega)</i></td>
+        <td>Controla se o pacote chegou inteiro ou quebrado (<code>TCP</code> e <code>UDP</code>).<br/><b>Pacotinho chama:</b> Segmento.</td>
       </tr>
       <tr>
         <td><b>3. Rede</b></td>
-        <td valign="middle"><b>Internet</b><br/><i>(Endereçamento lógico e roteamento de pacotes)</i></td>
-        <td><code>IPv4</code>, <code>IPv6</code>, <code>ICMP</code>, <code>ARP</code>, <code>OSPF</code>, <code>BGP</code><br/><b>PDU:</b> Pacote</td>
+        <td valign="middle"><b>Internet</b><br/><i>(Endereços IP e rotas)</i></td>
+        <td>É o "correio". Usa o <code>IPv4</code> ou <code>IPv6</code> para achar o melhor caminho.<br/><b>Pacotinho chama:</b> Pacote.</td>
       </tr>
       <tr>
         <td><b>2. Enlace de Dados</b></td>
-        <td rowspan="2" valign="middle"><b>Acesso à Rede</b><br/><i>(Endereçamento físico e sinalização física)</i></td>
-        <td><code>Ethernet (IEEE 802.3)</code>, <code>Wi-Fi (802.11)</code>, <code>MAC Address</code><br/><b>PDU:</b> Quadro (Frame)</td>
+        <td rowspan="2" valign="middle"><b>Acesso à Rede</b><br/><i>(Placa de rede e cabos)</i></td>
+        <td rowspan="2" valign="middle">A parte física. O cabo de rede, a placa Wi-Fi, luzes piscando e o endereço <code>MAC</code>.</td>
       </tr>
       <tr>
         <td><b>1. Física</b></td>
-        <td>Cabos UTP/STP, Fibra Óptica, Conectores RJ-45, Sinais Elétricos e Ópticos<br/><b>PDU:</b> Bits</td>
       </tr>
     </tbody>
   </table>
