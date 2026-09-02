@@ -12,6 +12,7 @@
     <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
   </p>
 </div>
+</div>
 
 <hr/>
 
