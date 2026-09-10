@@ -1,111 +1,77 @@
 <div align="center">
 
-  <h1>🧠 Soft Skills & Desenvolvimento Profissional</h1>
-  <p><b>Formação Mulher Digital • Trilha de Desenvolvimento de Carreira & Liderança</b></p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=LinkedIn%20e%20Marca%20Pessoal&fontSize=40&fontColor=FFFFFF&fontAlignY=35&desc=Webinar%2001%20%7C%20Cris%20Mano%20(Kyndryl)&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
 
-  <p>
-    <img src="https://img.shields.io/badge/Formação-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
-    <img src="https://img.shields.io/badge/Trilha-Soft_Skills_%26_Carreira-0A84FF?style=for-the-badge" alt="Carreira" />
-    <img src="https://img.shields.io/badge/Foco-Cibersegurança_%26_Redes-005073?style=for-the-badge" alt="Foco" />
-    <img src="https://img.shields.io/badge/Status-Ativo-success?style=for-the-badge" alt="Status" />
-  </p>
+<img src="https://img.shields.io/badge/Palestrante-Cris_Mano-161B22?style=for-the-badge&logo=target&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Plataforma-LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Trilha_Mulher_Digital-161B22?style=for-the-badge&logo=gitbook&logoColor=58A6FF" />
 
 </div>
 
-<hr/>
+<br>
 
-<h2>📌 1. Introdução</h2>
+## 📌 Visão Geral
+Anotações estruturadas do Webinar 01 da Formação Mulher Digital, conduzido por **Cris Mano** (Diretora de Marketing para a América Latina na Kyndryl). O encontro detalha a construção da persona digital, estratégias de posicionamento para transição de carreira, o funcionamento prático do algoritmo do LinkedIn e o uso consciente de IA para fortalecer a narrativa profissional.
 
-<p>
-Mapeamento e estruturação de competências sociocomportamentais (<i>Soft Skills</i>), inteligência emocional aplicada ao ambiente corporativo e posicionamento estratégico de carreira desenvolvidos ao longo do programa <b>Mulher Digital</b>.
-</p>
+---
 
-<p>
-Este material consolida o perfil profissional, diferenciais de atuação, histórico acadêmico e técnico, além dos objetivos direcionados para o ecossistema de <b>Cibersegurança, Redes de Computadores e Suporte Técnico em TI</b>.
-</p>
+## 🧭 Persona Digital: Existir com Intencionalidade
 
-<hr/>
+* 🔍 **A primeira impressão é online:** Recrutadores e gestores pesquisam o perfil de um candidato antes da primeira entrevista técnica para checar se a narrativa do currículo bate com a presença digital.
+* 🪞 **Alinhamento real vs. digital:** A persona digital não é um personagem inventado, mas a projeção autêntica de competências, interesses e valores.
+* 🗣️ **Conte sua própria história:** Se você não gera conteúdo sobre seus estudos e conquistas, os mecanismos de busca mostram apenas registros aleatórios ou o que terceiros dizem sobre você.
+* 🚫 **Autopromoção vs. Compartilhamento:** Construir marca pessoal não é inflar o ego, mas tornar o conhecimento útil para a comunidade. "Conhecimento bom é conhecimento compartilhado".
 
-<details open>
-  <summary><h2>🪞 2. Identidade & Posicionamento Profissional</h2></summary>
-  <br/>
+---
 
-  <h3>📖 Trajetória e Perfil Técnico</h3>
-  <ul>
-    <li><b>Formação Acadêmica:</b> Graduada em Análise e Desenvolvimento de Sistemas (ADS) — Faculdade Descomplica Digital.</li>
-    <li><b>Capacitações e Certificações:</b>
-      <ul>
-        <li>Aluna da <b>Formação Mulher Digital</b> (Junior Achievement Américas) — Foco em Redes e Cibersegurança.</li>
-        <li><b>Programadora de Sistemas</b> — SENAC SP (<i>Programa Transforme-se</i>).</li>
-        <li>Preparação contínua para certificações <b>Google IT Support</b> e <b>Cisco CCNA</b>.</li>
-      </ul>
-    </li>
-    <li><b>Experiência Corporativa:</b> Atuação como assistente de projetos em consultoria de TI (<i>inventCloud Tecnologia</i>), unindo controle rigoroso de processos, validação de sistemas, gestão de SLAs operacionais e interface de comunicação entre equipes técnicas e gestores.</li>
-    <li><b>Objetivo de Carreira:</b> Atuação e transição orientada para as áreas de <b>Suporte Técnico (N1/Help Desk), Infraestrutura de Redes e Segurança da Informação</b>.</li>
-  </ul>
-</details>
+## 📈 Otimização de Perfil e Métrica SSI
 
-<hr/>
+O **Social Selling Index (SSI)** do LinkedIn mede a força da presença na plataforma de 1 a 100 com base em 4 pilares: estabelecer marca profissional, localizar pessoas certas, interagir com insights e criar relacionamentos.
 
-<details open>
-  <summary><h2>🎯 3. Matriz de Competências Sociocomportamentais</h2></summary>
-  <br/>
+| Elemento do Perfil | Orientação Estratégica |
+| :--- | :--- |
+| **Foto e Imagem de Fundo** | Foto atual e profissional; capa contextualizada com a área-alvo (Cibersegurança, tecnologia ou operações de rede). |
+| **Resumo ("Sobre")** | Apresentação dinâmica e autêntica, focando na trajetória, motivação de carreira e projetos práticos em andamento. |
+| **Experiências Anteriores** | Não apagar o histórico de outras áreas. A experiência prévia comprova maturidade corporativa e responsabilidade. |
+| **Destaques de Conteúdo** | Fixar publicações estratégicas no topo (ex.: anúncio de transição de carreira, projetos de destaque, laboratórios no GitHub). |
+| **Recomendações** | Solicitar depoimentos de professores, mentores e colegas de projetos para validar postura e dedicação técnica. |
 
-  <table width="100%">
-    <thead>
-      <tr bgcolor="#1f242c">
-        <th align="left" width="30%">Competência</th>
-        <th align="left" width="70%">Aplicação Prática no Ambiente de TI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🗣️ <b>Comunicação Estratégica</b></td>
-        <td>Facilitação do fluxo de informações e alinhamento claro de requisitos técnicos entre equipes de desenvolvimento, consultores, liderança e usuários finais.</td>
-      </tr>
-      <tr>
-        <td>🧩 <b>Resolução Crítica de Problemas</b></td>
-        <td>Análise investigativa de causas-raiz (<i>root cause analysis</i>), diagnóstico metódico de chamados e mitigação de gargalos em rotinas operacionais.</td>
-      </tr>
-      <tr>
-        <td>🤝 <b>Trabalho Colaborativo</b></td>
-        <td>Atuação integrada e ágil em times multidisciplinares (metodologias Scrum e Kanban), promovendo a troca de conhecimento e o cumprimento de metas coletivas.</td>
-      </tr>
-      <tr>
-        <td>🔄 <b>Adaptabilidade & Resiliência</b></td>
-        <td>Postura proativa de aprendizado contínuo (<i>Lifelong Learning</i>) frente a novos cenários, tecnologias emergentes, ferramentas e auditorias de conformidade.</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
+---
 
-<hr/>
+## ⚙️ Dinâmica do Algoritmo e Engajamento
 
-<details open>
-  <summary><h2>📄 4. Documentos & Presença Profissional</h2></summary>
-  <br/>
+* ✍️ **Postagens originais:** O algoritmo prioriza reflexões e análises autorais em relação a simples reposts sem comentários.
+* 💬 **Consumo ativo vs. passivo:** Apenas curtir não gera relevância. O algoritmo reconhece o usuário quando há comentários com pontos de vista e participação consistente em debates do setor.
+* 🤝 **Expansão qualificada de rede:** Conectar-se com pares em formação, mas buscar ativamente líderes técnicos, CISOs e profissionais atuantes no mercado-alvo (como Fábio Isaguirre e Felipe Prado em cibersegurança).
+* 🌐 **Manutenção de conexões prévias:** Não excluir contatos de áreas anteriores; o algoritmo valoriza redes amplas e a interdisciplinaridade enriquece o perfil.
 
-  <blockquote>
-    <b>⏳ Status Atual:</b> Portfólio técnico e documentações de laboratórios práticos em constante atualização e expansão no GitHub.
-  </blockquote>
+---
 
-  <ul>
-    <li>🐙 <b>GitHub:</b> <a href="https://github.com/fer-isa"><code>github.com/fer-isa</code></a></li>
-    <li>🔗 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/fernanda-isabelli/"><code>linkedin.com/in/fernanda-isabelli</code></a></li>
-  </ul>
-</details>
+## 🤖 Uso de IA e Cuidados com a Marca
 
-<hr/>
+* 🛠️ **IA como organizadora, não substituta:** Utilizar ferramentas generativas para estruturar ideias, sugerir abordagens e revisar textos, sem terceirizar o raciocínio ou perder a própria voz.
+* 🎯 **Ajuste de tom de voz:** Alimentar a ferramenta com exemplos do próprio vocabulário para evitar textos artificiais ou com clichês evidentes de IA.
+* 🔒 **Postura corporativa ética:** 
+  * Não expor dados confidenciais de clientes ou empresas.
+  * Não usar o LinkedIn para discussões inflamadas, debates políticos polarizados ou desabafos destrutivos de atendimento.
+  * Posicionar-se com firmeza e denúncia direta contra preconceitos, sem transformar a rede em espaço de conflito improdutivo.
+
+---
+
+## 💡 Minha Visão (Resumo SOC)
+
+> A orientação da Cris Mano sobre **não apagar o passado profissional** encaixa-se diretamente na minha realidade. Minha atuação como Assistente de Projetos de TI não concorre com a Cibersegurança; pelo contrário, agrega controle de SLA, comunicação clara e gestão de demandas à rotina técnica de um SOC.
+>
+> A marca pessoal de um analista em formação se constrói documentando a prática: transformar cada simulação no Packet Tracer, análise de pacotes no Wireshark e participação em comunidades em conteúdo útil e acessível. Essa consistência no LinkedIn e no GitHub valida o aprendizado contínuo muito antes da primeira entrevista técnica.
+
+<br>
 
 <div align="center">
-  <h3>👩‍💻 Desenvolvido por</h3>
-  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
-  <p>
-    <a href="https://github.com/fer-isa">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
+  <a href="../">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Webinars-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
 </div>
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A4365,50:1A365D,100:0B1D3A&height=100&section=footer" width="100%" />
