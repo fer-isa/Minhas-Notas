@@ -1,118 +1,73 @@
 <div align="center">
 
-  <img src="../../assets/introduction-to-cybersecurity.png" width="180" alt="Introduction to Cybersecurity" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=Introdu%C3%A7%C3%A3o%20%C3%A0%20Ciberseguran%C3%A7a&fontSize=50&fontColor=FFFFFF&fontAlignY=35&desc=M%C3%B3dulos%201%20ao%206%20%7C%20Forma%C3%A7%C3%A3o%20Mulher%20Digital&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
 
-  <div align="center">
-  <h2>🛡️ Introdução à Cibersegurança — Módulos 1 ao 6</h2>
-  <p><b>Formação Mulher Digital • Trilha de Cibersegurança & Infraestrutura</b></p>
-  
-  <p>
-    <img src="https://img.shields.io/badge/Segurança_da_Informação-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Segurança" />
-    <img src="https://img.shields.io/badge/Trilha-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
-    <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
-  </p>
+<img src="https://img.shields.io/badge/Cisco_Academy-161B22?style=for-the-badge&logo=cisco&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Segurança_da_Informação-161B22?style=for-the-badge&logo=shield&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Trilha_Mulher_Digital-161B22?style=for-the-badge&logo=gitbook&logoColor=58A6FF" />
+
 </div>
-</div>
-
-<hr/>
-
-<h3>📌 Visão Geral</h3>
-<p>Um guia básico e direto sobre como proteger informações, entender como os invasores agem no dia a dia e montar defesas para não cair em armadilhas digitais.</p>
-
-<hr/>
-
-<h3>📝 A "Rede de Papel" (Entendendo a Lógica)</h3>
-
-<p><b>1. A Tríade CIA (A Base de Tudo)</b><br>
-Na segurança, nós protegemos as coisas baseadas em três pilares simples:</p>
-<ul>
-  <li><b>Confidencialidade (O Segredo):</b> Só quem tem a chave pode ler a mensagem.</li>
-  <li><b>Integridade (A Precisão):</b> A mensagem não pode ser alterada no meio do caminho.</li>
-  <li><b>Disponibilidade (O Acesso):</b> O sistema tem que estar funcionando na hora que eu precisar usar.</li>
-</ul>
-
-<p><b>2. Tipos de Ameaças (Os Malwares)</b><br>
-Como os programas maliciosos agem na prática?</p>
-<ul>
-  <li>🦠 <b>Vírus:</b> Fica escondido num arquivo. Ele só age se VOCÊ clicar e "abrir a porta" para ele.</li>
-  <li>🐛 <b>Worm:</b> É independente. Ele não precisa de clique; acha uma brecha na rede, entra pela janela e se espalha sozinho.</li>
-  <li>🐴 <b>Trojan (Cavalo de Troia):</b> Finge ser um programa legal (tipo um jogo gratuito), mas quando você instala, ele abre as portas do seu PC para hackers.</li>
-  <li>🔒 <b>Ransomware:</b> É o sequestrador digital. Ele tranca (criptografa) todos os seus arquivos e cobra dinheiro de resgate para liberar a senha.</li>
-</ul>
-
-<hr/>
-
-<h3>⚙️ A Prática (O que importa)</h3>
-
-<p><b>Ataques ao Fator Humano (Engenharia Social)</b></p>
-<table width="100%">
-  <thead>
-    <tr bgcolor="#1f242c">
-      <th align="left">Nome do Ataque</th>
-      <th align="left">Como funciona na prática?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Phishing</b></td>
-      <td>Aquele e-mail falso do banco pedindo para você atualizar a senha.</td>
-    </tr>
-    <tr>
-      <td><b>Spear Phishing</b></td>
-      <td>Igual ao Phishing, mas feito sob medida (ex: fingindo ser o seu chefe).</td>
-    </tr>
-    <tr>
-      <td><b>Vishing & Smishing</b></td>
-      <td>O golpe pelo telefone/voz (<i>Vishing</i>) ou por mensagem de SMS (<i>Smishing</i>).</td>
-    </tr>
-  </tbody>
-</table>
 
 <br>
 
-<p><b>Trancando as Portas (Acessos e Criptografia)</b></p>
-<table width="100%">
-  <thead>
-    <tr bgcolor="#1f242c">
-      <th align="left">Tecnologia</th>
-      <th align="left">O que é?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>MFA (Múltiplos Fatores)</b></td>
-      <td>Não basta só a senha! Exige algo que você <i>sabe</i> (senha), algo que você <i>tem</i> (celular) ou algo que você <i>é</i> (biometria).</td>
-    </tr>
-    <tr>
-      <td><b>Criptografia Simétrica</b></td>
-      <td>Usa a <b>mesma chave</b> para trancar e destrancar o cadeado. É mais rápida.</td>
-    </tr>
-    <tr>
-      <td><b>Criptografia Assimétrica</b></td>
-      <td>Usa <b>duas chaves</b> (Pública para trancar, Privada para destrancar). Muito mais segura.</td>
-    </tr>
-  </tbody>
-</table>
+## 📌 Visão Geral
+Um guia básico e direto sobre como proteger informações, entender como os invasores agem no dia a dia e montar defesas para não cair em armadilhas digitais.
 
-<hr/>
+---
 
-<h3>💡 Minha Visão (O Resumo da Fer)</h3>
-<p><i>
-O maior "clique" que eu tive estudando essa trilha de Cibersegurança foi entender que o elo mais fraco quase nunca é o computador, mas sim <b>o ser humano</b>. Não adianta nada a empresa investir milhões em firewalls caríssimos (uma porta blindada), se o funcionário acabar entregando a senha de livre e espontânea vontade em um ataque de Phishing. Outra coisa que achei incrível foi a regra da <b>Defesa em Profundidade</b>: a gente nunca depende de uma barreira só. Se o invasor passar pela porta, ele ainda tem que lidar com o alarme, com o cofre e com o cão de guarda!
-</i></p>
+## 📝 A "Rede de Papel" (Entendendo a Lógica)
 
-<hr/>
+### 1. A Tríade CIA (A Base de Tudo)
+Na segurança, nós protegemos as coisas baseadas em três pilares simples:
+* **Confidencialidade (O Segredo):** Só quem tem a chave pode ler a mensagem.
+* **Integridade (A Precisão):** A mensagem não pode ser alterada no meio do caminho.
+* **Disponibilidade (O Acesso):** O sistema tem que estar funcionando na hora em que eu precisar usar.
+
+### 2. Tipos de Ameaças (Os Malwares)
+Como os programas maliciosos agem na prática?
+* 🦠 **Vírus:** Fica escondido num arquivo. Ele só age se VOCÊ clicar e "abrir a porta" para ele.
+* 🐛 **Worm:** É independente. Ele não precisa de clique; acha uma brecha na rede, entra pela janela e se espalha sozinho.
+* 🐴 **Trojan (Cavalo de Troia):** Finge ser um programa legal (tipo um jogo gratuito), mas quando você instala, ele abre as portas do seu PC para hackers.
+* 🔒 **Ransomware:** É o sequestrador digital. Ele tranca (criptografa) todos os seus arquivos e cobra dinheiro de resgate para liberar a senha.
+
+---
+
+## ⚙️ A Prática (O que importa)
+
+### 👤 Ataques ao Fator Humano (Engenharia Social)
+
+| Nome do Ataque | Como funciona na prática? |
+| :--- | :--- |
+| **Phishing** | Aquele e-mail falso do banco pedindo para você atualizar a senha. |
+| **Spear Phishing** | Igual ao Phishing, mas feito sob medida (ex: fingindo ser o seu chefe). |
+| **Vishing & Smishing** | O golpe pelo telefone/voz (*Vishing*) ou por mensagem de SMS (*Smishing*). |
+
+<br>
+
+### 🔑 Trancando as Portas (Acessos e Criptografia)
+
+| Tecnologia | O que é? |
+| :--- | :--- |
+| **MFA (Múltiplos Fatores)** | Não basta só a senha! Exige algo que você *sabe* (senha), algo que você *tem* (celular) ou algo que você *é* (biometria). |
+| **Criptografia Simétrica** | Usa a **mesma chave** para trancar e destrancar o cadeado. É mais rápida. |
+| **Criptografia Assimétrica** | Usa **duas chaves** (Pública para trancar, Privada para destrancar). Muito mais segura. |
+
+---
+
+## 💡 Minha Visão (Resumo SOC)
+
+> O maior "clique" que eu tive estudando essa trilha foi entender que **o elo mais fraco quase nunca é o computador, mas sim o ser humano**. Não adianta nada a empresa investir milhões em firewalls caríssimos (uma porta blindada), se o funcionário acabar entregando a senha de livre e espontânea vontade em um ataque de Phishing. 
+> 
+> Outro conceito incrível é a regra da **Defesa em Profundidade**: a gente nunca depende de uma barreira só. Se o invasor passar pela porta, ele ainda tem que lidar com o alarme, com o cofre e com a criptografia!
+
+<br>
 
 <div align="center">
-  <h3>👩‍💻 Desenvolvido por</h3>
-  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
-  <p>
-    <a href="https://github.com/fer-isa">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
+  <a href="https://github.com/fer-isa/Minhas-Notas/tree/main/Mulher-Digital/Ciberseguranca">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Índice_de_Cibersegurança-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
 </div>
 
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A4365,50:1A365D,100:0B1D3A&height=100&section=footer" width="100%" />
