@@ -1,30 +1,40 @@
 <div align="center">
-  <h2>🌐 Laboratório de Redes: DHCP e Troubleshooting</h2>
-  <p><i>Meus estudos práticos de endereçamento IP e resolução de conflitos via Cisco IOS</i></p>
-  
-  <img src="https://img.shields.io/badge/Cisco_Packet_Tracer-049CE4?style=for-the-badge&logo=cisco&logoColor=white" />
-  <img src="https://img.shields.io/badge/Networking-CCST-success?style=for-the-badge" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=DHCP%20e%20Troubleshooting&fontSize=50&fontColor=FFFFFF&fontAlignY=35&desc=Laborat%C3%B3rio%20de%20Redes%20%7C%20Cisco%20Packet%20Tracer&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
+
+<img src="https://img.shields.io/badge/Cisco_Packet_Tracer-161B22?style=for-the-badge&logo=cisco&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Networking_CCST-161B22?style=for-the-badge&logo=cisco&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Troubleshooting-161B22?style=for-the-badge&logo=quicklook&logoColor=58A6FF" />
+
 </div>
 
 <br>
 
-### 🎯 O Objetivo
-Neste laboratório, o foco foi configurar o roteador para entregar endereços IP automaticamente para os computadores da rede (servidor DHCP). Isso evita o trabalho manual e previne erros de digitação, algo essencial para o dia a dia em redes corporativas.
+## 🎯 O Objetivo
+Neste laboratório, o foco foi configurar o roteador para entregar endereços IP automaticamente para os computadores da rede (servidor DHCP). Isso evita o trabalho manual e previne erros de digitação, algo essencial para manter a integridade e a organização em redes corporativas.
 
-### 🗺️ A Topologia da Rede
+> **🛡️ Visão de Segurança (SOC):** 
+> Entender como o DHCP distribui os IPs é fundamental para a triagem de incidentes. Em um cenário real de SOC, se um alerta de segurança apontar para o IP `192.168.1.11`, eu preciso saber analisar a tabela DHCP para descobrir exatamente **qual máquina** recebeu esse endereço naquele momento.
+
+---
+
+## 🗺️ A Topologia da Rede
 <div align="center">
   <img src="https://github.com/user-attachments/assets/91be74b1-4821-4be7-876f-717c64647d2b" width="600px"/>
 </div>
 
-<br>
+---
 
-### 💡 O Que Eu Aprendi na Prática (Conceitos Técnicos)
-Este laboratório foi fundamental para eu entender, consolidar e aplicar os seguintes termos:
-*   **Gateway:** Aprendi que ele atua como a "porta de saída" da nossa rede local. No laboratório, configurei a interface do roteador (IP `192.168.1.1`) para ser esse Gateway, permitindo que os computadores saibam por onde enviar informações.
-*   **DHCP Pool:** Entendi que o "Pool" é um grupo (ou bolsão) de endereços IP. Eu precisei criar esse Pool no roteador para que ele tivesse uma lista de IPs válidos para distribuir, garantindo que as máquinas pudessem se comunicar na rede.
-*   **Troubleshooting:** Aprendi que esse termo é usado para descrever a investigação e a resolução de um problema técnico. Eu apliquei o troubleshooting na prática quando me deparei com um erro no roteador e precisei analisar os logs para descobrir a causa e aplicar a correção.
+## 💡 O Que Aprendi na Prática (Conceitos Técnicos)
+Este laboratório foi fundamental para consolidar a base de endereçamento e comunicação:
 
-### ⚙️ Comandos Utilizados
+*   **Gateway:** Aprendi que ele atua como a "porta de saída" da nossa rede local. No laboratório, configurei a interface do roteador (IP `192.168.1.1`) para ser esse Gateway, permitindo que os computadores saibam por onde enviar informações para fora da rede.
+*   **DHCP Pool:** Entendi que o "Pool" é um grupo (ou bolsão) de endereços IP. Precise criar esse Pool no roteador para que ele tivesse uma lista de IPs válidos para distribuir, garantindo que as máquinas pudessem se comunicar.
+*   **Troubleshooting:** A prática da investigação. Apliquei o troubleshooting real quando me deparei com um erro no roteador, precisando analisar logs para descobrir a causa e aplicar a correção (detalhes na seção de conflitos abaixo).
+
+---
+
+## ⚙️ Comandos Utilizados e Configurações
 
 <details>
   <summary><b>🛠️ 1. Configurando o Pool e o Gateway (Clique para expandir)</b></summary>
@@ -39,7 +49,7 @@ Router(dhcp-config)# dns-server 8.8.8.8
 </details>
 
 <details>
-  <summary><b>🔍 2. Verificando a Tabela (Bindings) (Clique para expandir)</b></summary>
+  <summary><b>🔍 2. Verificando a Tabela DHCP (Bindings) (Clique para expandir)</b></summary>
   <br>
   <div align="center">
     <img src="https://github.com/user-attachments/assets/62c89a46-e87f-4eb1-85b1-1fbe8b25919d" width="700px"/>
@@ -47,34 +57,32 @@ Router(dhcp-config)# dns-server 8.8.8.8
   </div>
 </details>
 
-<br>
+---
 
-### 🚨 Troubleshooting: Resolvendo o Conflito de IP
-Durante a configuração, enfrentei um problema real de rede que me exigiu investigar (troubleshooting) o que estava acontecendo:
-<ul>
-  <li><b>O Erro:</b> O terminal do roteador me mostrou o aviso <code>%DHCPD-4-PING_CONFLICT</code>. Analisando a mensagem, descobri que estava acontecendo um conflito com o IP do nosso Gateway (<code>192.168.1.1</code>).</li>
-  <li><b>A Investigação e a Permissão:</b> Para resolver o conflito, aprendi que precisava usar o comando <code>clear ip dhcp binding *</code> para limpar a tabela de IPs que estava gerando o erro. </li>
-  <li><b>O Aprendizado:</b> O comando falhou na primeira tentativa por falta de permissão. Isso me ensinou que, no sistema da Cisco, operações críticas exigem que o usuário eleve seu acesso para um nível superior (modo privilegiado/administrador) no terminal. Ao ajustar a permissão para um nível acima, consegui executar a limpeza com sucesso.</li>
-</ul>
+## 🚨 Troubleshooting: Resolvendo o Conflito de IP
 
-<br>
+Durante a configuração, enfrentei um problema de rede que exigiu investigação analítica para ser solucionado:
 
-### ✅ Teste Final (Ping)
+1. **O Erro (Identificação):** O terminal do roteador retornou o log <code>%DHCPD-4-PING_CONFLICT</code>. Analisando essa mensagem, diagnostiquei que estava ocorrendo um conflito com o próprio IP reservado do nosso Gateway (<code>192.168.1.1</code>).
+2. **A Ação (Correção):** Para resolver o conflito, precisei utilizar o comando <code>clear ip dhcp binding *</code> para limpar a tabela de IPs que estava gerando o erro.
+3. **O Aprendizado (Escalonamento de Privilégios):** O comando falhou na primeira tentativa por falta de permissão. Isso me ensinou na prática que operações críticas exigem a elevação de privilégios (modo administrador/privilegiado) no terminal Cisco. Após elevar o acesso, a limpeza foi executada com sucesso.
+
+---
+
+## ✅ Teste Final de Conectividade (Ping)
 <div align="center">
   <img src="https://github.com/user-attachments/assets/fe988890-46db-43f7-8fb0-0877256e50bc" width="700px"/>
-  <p><i>Com o problema resolvido, utilizei o comando Ping para testar a conectividade. Houve sucesso tanto na comunicação com o Gateway (192.168.1.1) quanto na comunicação direta entre os dois computadores (192.168.1.11).</i></p>
+  <p><i>Com o problema resolvido, validei a conectividade via Ping (ICMP). Houve sucesso tanto na comunicação com o Gateway (192.168.1.1) quanto na comunicação direta entre os dois computadores da topologia.</i></p>
 </div>
-<hr/>
+
+<br>
 
 <div align="center">
-  <h3>👩‍💻 Desenvolvido por</h3>
-  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
-  <p>
-    <a href="https://github.com/fer-isa">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
+  <a href="https://github.com/fer-isa/Minhas-Notas">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Minhas_Notas-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
 </div>
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A4365,50:1A365D,100:0B1D3A&height=100&section=footer" width="100%" />
