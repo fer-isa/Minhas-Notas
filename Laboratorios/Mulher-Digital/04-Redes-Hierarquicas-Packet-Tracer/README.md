@@ -1,181 +1,104 @@
 <div align="center">
-  <h2>🌐 Laboratório Prático: Introdução às Redes Hierárquicas</h2>
-  <p><b>Construindo uma rede corporativa dividida em 3 camadas: Acesso, Distribuição e Núcleo</b></p>
-  
-  <br>
-  
-  <p>
-    <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco Packet Tracer" />
-    <img src="https://img.shields.io/badge/Topologia-Hierárquica-0A84FF?style=for-the-badge" alt="Topologia" />
-    <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
-  </p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=Redes%20Hier%C3%A1rquicas&fontSize=60&fontColor=FFFFFF&fontAlignY=35&desc=Modelo%20de%203%20Camadas%20%7C%20Laborat%C3%B3rio%20Cisco&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
+
+<img src="https://img.shields.io/badge/Cisco_Packet_Tracer-161B22?style=for-the-badge&logo=cisco&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Networking_CCST-161B22?style=for-the-badge&logo=cisco&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Topologia_Hierárquica-161B22?style=for-the-badge&logo=sitemap&logoColor=58A6FF" />
+
 </div>
 
-<hr/>
+<br>
 
-<h3>📌 1. O Que Eu Fiz Neste Projeto</h3>
-<p>O objetivo deste laboratório foi sair das redes pequenas e montar a base de uma rede de empresa grande. Para isso, usei o modelo de <b>Três Camadas da Cisco</b>.</p>
+## 🎯 O Objetivo do Laboratório
+O objetivo deste projeto foi sair das redes pequenas e estruturar a base de uma rede corporativa de grande porte, utilizando o modelo clássico de **Três Camadas da Cisco**. A prática envolveu segmentar o ambiente fisicamente, respeitar as velocidades das portas e configurar o endereçamento IP estático para o roteamento correto.
 
-<p>A ideia aqui é organizar a casa: segmentar o ambiente fisicamente, passar os cabos corretamente respeitando as velocidades das portas e configurar o endereçamento IP estático para que os computadores consigam chegar até o roteador de saída (Core).</p>
+> **🛡️ Visão de Segurança (SOC):** 
+> Conhecer o modelo de 3 camadas (Acesso, Distribuição e Núcleo) é a base para criar políticas de segurança eficientes (ACLs). Se um atacante compromete um PC na camada de **Acesso**, o analista de SOC precisa saber como esse tráfego sobe para a **Distribuição** para tentar bloquear a ameaça antes que ela se espalhe lateralmente para outros departamentos ou atinja o **Núcleo** (Core) da empresa.
 
+---
+
+## 🏗️ A Topologia e os Equipamentos
 <div align="center">
   <img width="792" height="647" alt="image" src="https://github.com/user-attachments/assets/00918893-4a6b-452d-8a0f-d82ab08b951b" />
   <p><i>A divisão clássica: Roteador no topo (Núcleo), Switch parrudo no meio (Distribuição) e Switches menores na base (Acesso).</i></p>
 </div>
 
-<hr/>
+<br>
 
-<h3>🏗️ 2. Os Equipamentos Usados</h3>
-<p>Em uma rede hierárquica, cada equipamento tem uma função bem definida. Usei a seguinte estrutura:</p>
+Em uma rede hierárquica, cada equipamento tem uma função bem definida. A estrutura utilizada foi:
 
-<table width="100%">
-  <thead>
-    <tr bgcolor="#1f242c">
-      <th align="left">Camada</th>
-      <th align="left">Dispositivo / Modelo</th>
-      <th align="left">Função na Rede</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Núcleo (Core)</b></td>
-      <td>1x Roteador Cisco 4331</td>
-      <td>É o "chefe". Faz o encaminhamento rápido e é a porta de saída.</td>
-    </tr>
-    <tr>
-      <td><b>Distribuição</b></td>
-      <td>1x Switch Cisco Catalyst 3650</td>
-      <td>O "gerente". Junta os cabos que vêm da base e organiza o tráfego.</td>
-    </tr>
-    <tr>
-      <td><b>Acesso</b></td>
-      <td>2x Switches Cisco Catalyst 2960</td>
-      <td>A "linha de frente". Onde os PCs dos usuários são conectados.</td>
-    </tr>
-    <tr>
-      <td><b>Dispositivos Finais</b></td>
-      <td>4x Computadores Genéricos</td>
-      <td>Estações de trabalho divididas (Laboratório e Secretaria).</td>
-    </tr>
-  </tbody>
-</table>
+| Camada | Dispositivo / Modelo | Função na Rede |
+| :--- | :--- | :--- |
+| **Núcleo (Core)** | 1x Roteador Cisco 4331 | É o "chefe". Faz o encaminhamento rápido e é a porta de saída. |
+| **Distribuição** | 1x Switch Catalyst 3650 | O "gerente". Junta os cabos que vêm da base e organiza o tráfego. |
+| **Acesso** | 2x Switches Catalyst 2960 | A "linha de frente". Onde os PCs dos usuários são conectados. |
+| **Dispositivos Finais** | 4x PCs Genéricos | Estações de trabalho divididas (Laboratório e Secretaria). |
 
 <br>
 
-<p><b>Tabela de Endereçamento IP</b></p>
-<table width="100%">
-  <thead>
-    <tr bgcolor="#1f242c">
-      <th align="left">Aparelho</th>
-      <th align="left">Interface</th>
-      <th align="left">Endereço IPv4</th>
-      <th align="left">Máscara</th>
-      <th align="left">Gateway</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>PC-Lab01</b></td>
-      <td>FastEthernet0</td>
-      <td><code>192.168.1.10</code></td>
-      <td><code>255.255.255.0</code></td>
-      <td><code>192.168.1.1</code></td>
-    </tr>
-    <tr>
-      <td><b>PC-Lab02</b></td>
-      <td>FastEthernet0</td>
-      <td><code>192.168.1.11</code></td>
-      <td><code>255.255.255.0</code></td>
-      <td><code>192.168.1.1</code></td>
-    </tr>
-    <tr>
-      <td><b>PC-Sec01</b></td>
-      <td>FastEthernet0</td>
-      <td><code>192.168.1.20</code></td>
-      <td><code>255.255.255.0</code></td>
-      <td><code>192.168.1.1</code></td>
-    </tr>
-    <tr>
-      <td><b>PC-Sec02</b></td>
-      <td>FastEthernet0</td>
-      <td><code>192.168.1.21</code></td>
-      <td><code>255.255.255.0</code></td>
-      <td><code>192.168.1.1</code></td>
-    </tr>
-    <tr>
-      <td><b>Roteador-Core</b></td>
-      <td>GigabitEthernet0/0/0</td>
-      <td><code>192.168.1.1</code></td>
-      <td><code>255.255.255.0</code></td>
-      <td><i>-</i></td>
-    </tr>
-  </tbody>
-</table>
+### 📍 Tabela de Endereçamento IP (Estático)
 
-<hr/>
+| Aparelho | Interface | Endereço IPv4 | Máscara | Gateway |
+| :--- | :--- | :--- | :--- | :--- |
+| **PC-Lab01** | FastEthernet0 | `192.168.1.10` | `255.255.255.0` | `192.168.1.1` |
+| **PC-Lab02** | FastEthernet0 | `192.168.1.11` | `255.255.255.0` | `192.168.1.1` |
+| **PC-Sec01** | FastEthernet0 | `192.168.1.20` | `255.255.255.0` | `192.168.1.1` |
+| **PC-Sec02** | FastEthernet0 | `192.168.1.21` | `255.255.255.0` | `192.168.1.1` |
+| **Roteador-Core** | GigabitEthernet0/0/0 | `192.168.1.1` | `255.255.255.0` | *-* |
 
-<h3>⚙️ 3. Passo a Passo da Configuração</h3>
+---
 
-<ul>
-  <li>
-    <b>Etapa 1: Organização e Energia:</b> Posicionei os equipamentos respeitando a hierarquia visual. Um detalhe importante aqui foi o Switch 3650 (Distribuição): no simulador, ele vem desligado de fábrica e precisei inserir fisicamente o módulo da fonte de energia nele para que pudesse ligar.
-  </li>
-  <li>
-    <b>Etapa 2: Cabeamento:</b> Liguei os PCs nos switches de Acesso usando as portas normais (FastEthernet). Já a ligação entre os switches e o roteador foi feita nas portas mais rápidas (GigabitEthernet) para evitar lentidão no tráfego.
-  </li>
-  <li>
-    <b>Etapa 3: Ligando o Roteador (CLI):</b> Pela "tela preta", configurei o IP na interface do roteador e a ativei para que ela pudesse receber o tráfego dos computadores:
-  </li>
-</ul>
+## ⚙️ Passo a Passo da Configuração
 
-<pre>
+1. **Organização e Energia:** Posicionei os equipamentos respeitando a hierarquia visual. Um detalhe crítico: no simulador, o Switch 3650 (Distribuição) vem desligado de fábrica; foi necessário inserir fisicamente o módulo da fonte de energia nele para iniciar o boot.
+2. **Cabeamento Lógico:** Os PCs foram conectados aos switches de Acesso usando portas `FastEthernet`. A ligação de subida (uplink) entre os switches e o roteador exigiu as portas `GigabitEthernet` para suportar o gargalo de tráfego sem lentidão.
+3. **Ligando o Roteador (CLI):** Configuração da interface principal do roteador via terminal para atuar como Gateway da rede:
+
+```text
 Router> enable
 Router# configure terminal
 Router(config)# interface GigabitEthernet0/0/0
 Router(config-if)# ip address 192.168.1.1 255.255.255.0
 Router(config-if)# no shutdown
 Router(config-if)# exit
-</pre>
 
-<hr/>
+````
 
-<h3>🚧 4. Meus Desafios e Aprendizados Reais</h3>
-<p>Fazer esse laboratório em conjunto com a turma e a professora em um ritmo mais acelerado foi um ótimo teste de atenção. Durante o processo, enfrentei algumas "pegadinhas" práticas:</p>
+
+## 💡 Meus Desafios e Aprendizados Reais
+
+<p>Executar este laboratório foi um ótimo teste de atenção aos detalhes de hardware e estruturação:</p>
 
 <ul>
   <li>
-    <b>O mistério da Porta Gigabit 24:</b> Na hora de montar a topologia, acabei selecionando o switch 3550 por engano. Fiquei super encucada porque não conseguia achar a porta "Gigabit 24" para fazer a conexão principal de jeito nenhum! Só depois de investigar, percebi o erro e troquei para o modelo correto (Catalyst 3650). Foi uma lição muito real sobre como validar o modelo exato do hardware antes de começar.
+    <b>O Mistério da Porta Gigabit 24:</b> Na hora de montar a topologia, selecionei o switch modelo 3550 por engano. Fiquei presa na etapa de cabeamento porque não conseguia achar a porta "Gigabit 24" para fazer a conexão principal. Após investigar, percebi o erro e troquei para o Catalyst 3650 correto. Foi uma lição muito real sobre a importância de validar as especificações do hardware antes de iniciar a montagem.
   </li>
   <li>
-    <li>
-    <b>A lógica e a ordem do cabeamento:</b> Tive dúvida na hora de puxar os cabos, sem saber se deveria plugar primeiro saindo do roteador para o switch ou o contrário. Fui orientada pela professora que a ordem de conexão importa muito! No simulador (e nas boas práticas da Cisco), seguir a hierarquia correta na hora de ligar os equipamentos ajuda a organizar as portas e evita bugs no sistema de avaliação do Packet Tracer, que registra exatamente qual equipamento é a origem e qual é o destino do cabo.
+    <b>A Lógica e a Ordem do Cabeamento:</b> Tive dúvidas sobre a direção de plugar os cabos (do roteador para o switch ou vice-versa). Fui orientada que a ordem de conexão importa! Seguir a hierarquia topológica na hora de ligar os cabos ajuda a organizar visualmente as portas e evita bugs no sistema de avaliação do Packet Tracer.
   </li>
 </ul>
 
-<hr/>
+---
 
-<h3>🎥 5. Teste Prático (Vídeo)</h3>
-<p>Para provar que a configuração física e lógica funcionou, em vez de usar telas estáticas, gravei um pequeno vídeo do modo de simulação.</p>
+## 🎥 Teste Prático (Validação de Tráfego)
 
-<div align="center">
+<p>Para comprovar a eficácia da configuração física e lógica, registrei a simulação da comunicação de ponta a ponta na rede:</p>
 
 https://github.com/user-attachments/assets/954627db-564b-43d2-9a32-46759071eee7
 
-  <br>
-  <p><i>Fluxo de pacotes ICMP percorrendo os switches de Acesso, Distribuição e Roteador Core.</i></p>
+<div align="center">
+  <p><i>Fluxo de pacotes ICMP percorrendo corretamente os switches de Acesso, subindo para a Distribuição e sendo roteados pelo Core.</i></p>
 </div>
 
-<hr/>
+<br>
 
 <div align="center">
-  <h3>👩‍💻 Desenvolvido por</h3>
-  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
-  <p>
-    <a href="https://github.com/fer-isa">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
+  <a href="https://github.com/fer-isa/Minhas-Notas">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Minhas_Notas-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
 </div>
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A4365,50:1A365D,100:0B1D3A&height=100&section=footer" width="100%" />
