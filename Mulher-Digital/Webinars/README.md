@@ -11,7 +11,7 @@
 <br>
 
 ## 📌 Visão Geral
-A teoria constrói a base, mas é o contato com o mercado que dita o ritmo. Este diretório é dedicado a documentar os principais *insights*, palestras e webinars extracurriculares que acompanho. O foco aqui é extrair tendências, táticas de defesa atuais e a visão de especialistas que já atuam na linha de frente da Cibersegurança.
+A teoria constrói a base, mas é o contato com o mercado que dita o ritmo. Este diretório é dedicado a documentar os principais insights, palestras e webinars extracurriculares que acompanho ao longo da minha formação. O foco aqui é extrair tendências, táticas de defesa atuais e a visão de especialistas que já atuam na linha de frente da Cibersegurança e no mercado corporativo.
 
 ---
 
@@ -23,19 +23,19 @@ A teoria constrói a base, mas é o contato com o mercado que dita o ritmo. Este
 <tr>
 <td width="50%" valign="top">
 
-### 📺 01. [Nome do Primeiro Webinar]
-Breve descrição de uma linha sobre o tema abordado.
+### 💼 01. LinkedIn e Marca Pessoal
+Estratégias de posicionamento na rede, otimização de perfil e geração de conteúdo para visibilidade profissional e networking estratégico.
 
-**[Em breve ⏳](./01-Nome-do-Arquivo.md)**
+**[Acessar pasta e anotações →](./01-LinkedIn-e-Marca-Pessoal)**
 
 </td>
 
 <td width="50%" valign="top">
 
-### 📺 02. [Nome do Segundo Webinar]
-Breve descrição de uma linha sobre o tema abordado.
+### 🛡️ 02. Empregabilidade em Cibersegurança
+Panorama real do mercado de segurança da informação, demandas do setor e direcionamento de habilidades para oportunidades de entrada.
 
-**[Em breve ⏳](./02-Nome-do-Arquivo.md)**
+**[Acessar pasta e anotações →](./02-Empregabilidade-em-Ciberseguranca)**
 
 </td>
 </tr>
