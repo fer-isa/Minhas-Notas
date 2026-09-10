@@ -1,132 +1,90 @@
 <div align="center">
 
-  <h1>🛡️ Webinar: Empregabilidade em Cibersegurança</h1>
-  <p><b>Formação Mulher Digital • Masterclass & Mercado de Trabalho Tech</b></p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=Empregabilidade%20em%20Cyber&fontSize=42&fontColor=FFFFFF&fontAlignY=35&desc=Webinar%2002%20%7C%20F%C3%A1bio%20Isaguirre%20(Kyndryl)&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
 
-  <p>
-    <img src="https://img.shields.io/badge/Palestrante-Fábio_Zaguirri_(Kyndryl)-005073?style=for-the-badge" alt="Kyndryl" />
-    <img src="https://img.shields.io/badge/Trilha-Empregabilidade_%26_Carreira-0A84FF?style=for-the-badge" alt="Carreira" />
-    <img src="https://img.shields.io/badge/Formação-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
-    <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
-  </p>
+<img src="https://img.shields.io/badge/Palestrante-Fábio_Isaguirre-161B22?style=for-the-badge&logo=target&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Mercado-Cibersegurança-161B22?style=for-the-badge&logo=shield&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Trilha_Mulher_Digital-161B22?style=for-the-badge&logo=gitbook&logoColor=58A6FF" />
 
 </div>
 
-<hr/>
+<br>
 
-<h2 align="center">📌 Visão Geral</h2>
+## 📌 Visão Geral
+Anotações estruturadas da palestra ministrada por **Fábio Isaguirre** (Cyber Resilience & Network Leader - Brazil na Kyndryl). A sessão aborda a quebra de mitos sobre a área técnica, o panorama real de vagas versus competências e a construção de um plano de ação para entrada no mercado de Cibersegurança.
 
-<p align="center">
-  <span style="display:inline-block; text-align:left; max-width:900px;">
-    Síntese executiva do encontro ministrado por <b>Fábio Zaguirri</b> (Líder de Cyber Resiliência na <i>Kyndryl Brasil</i>), desmistificando as barreiras de entrada na área de segurança da informação e demonstrando que o setor vai muito além da programação tradicional, englobando governança corporativa, conformidade regulatória (GRC), privacidade de dados, comunicação estratégica e gestão de crises.
-  </span>
-</p>
+---
 
-<hr/>
+## 🚫 Ato 1: Quebrando Mitos
 
-<details open>
-  <summary><h2 align="center">📊 Panorama do Mercado Global de Segurança</h2></summary>
-  <br/>
+* 🧩 **Cibersegurança não é só programação:** Embora o código seja essencial para áreas como Pentest e AppSec, existem trilhas inteiras focadas em processos, gestão de riscos e resposta a incidentes (SOC, GRC, IAM, Resiliência).
+* 👥 **Foco em pessoas e continuidade:** Proteger a infraestrutura significa resguardar dados de pacientes em hospitais, transações bancárias, identidades e serviços essenciais.
+* 🛡️ **O ciclo de defesa além do ataque:**
+  * **Antes:** Avaliação de riscos, criação de políticas, gestão de vulnerabilidades e conscientização.
+  * **Durante:** Detecção precoce, contenção, investigação e comunicação rápida.
+  * **Depois:** Recuperação de ambientes, análise de causa-raiz e aprimoramento de defesas.
+* 🔄 **Valor da experiência prévia:** Profissionais vindos de outras disciplinas (como gestão, processos e suporte) trazem uma vantagem competitiva direta para a resolução de crises e estruturação operacional.
 
-  <div align="center">
-    <ul style="display:inline-block; text-align:left; max-width:900px;">
-      <li><b>Déficit Crítico de Talentos:</b> Existem mais de <b>3,5 milhões</b> de postos de trabalho não preenchidos globalmente devido à escassez de profissionais qualificados.</li>
-      <li><b>Demanda em Alta Expansão:</b> Projeção de crescimento contínuo estimada em até <b>75%</b> para suprir as lacunas defensivas e regulatórias das organizações.</li>
-      <li><b>Oportunidades de Entrada:</b> Grande volume de posições de entrada (<i>Entry-Level / Júnior</i>) que valorizam profissionais analíticos, com boa comunicação, adaptabilidade e fundamentação sólida em conceitos de redes e segurança.</li>
-    </ul>
-  </div>
-</details>
+---
 
-<hr/>
+## 📊 Ato 2: O Mercado Real e Competências
 
-<details open>
-  <summary><h2 align="center">🎯 1. Pilares de Atuação Profissional em Cibersegurança</h2></summary>
-  <br/>
+* 📈 **O paradoxo das vagas:** Embora existam milhões de posições não preenchidas no mundo e demanda de centenas de milhares no Brasil (ISC2), a contratação não é automática. As empresas buscam competências práticas aplicadas para resolver gargalos reais.
+* 👩‍💻 **Crescimento da representatividade:** Mulheres ocupam entre 20% e 25% dos cargos globais em segurança, com o índice subindo para 26% entre profissionais com menos de 30 anos.
+* 🧠 **Equação da Empregabilidade:**
+  $$\text{Conhecimento} + \text{Prática} + \text{Certificação} + \text{Comunicação} + \text{Networking} = \text{Empregabilidade}$$
+  * Levantamentos de mercado apontam **Comunicação** e **Gestão de Projetos** entre as soft skills mais exigidas, operando em conjunto com conhecimentos de redes, nuvem e sistemas operacionais.
+* 🌐 **Inglês técnico como base:** Ferramenta indispensável desde os primeiros passos para leitura de documentações, relatórios de vulnerabilidades (CVEs) e exames de certificação.
 
-  <div align="center">
-    <table width="100%" style="max-width:900px;">
-      <thead>
-        <tr bgcolor="#1f242c" style="color:white;">
-          <th align="left" width="30%">Pilar de Atuação</th>
-          <th align="left" width="40%">Escopo Principal & Rotina</th>
-          <th align="left" width="30%">Habilidades & Ferramentas</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>🛡️ <b>Defesa & Operações (Blue Team)</b></td>
-          <td>Monitoramento proativo de tráfego, triagem de alertas no SOC (<i>Security Operations Center</i>) e resposta a incidentes.</td>
-          <td>SIEM, Firewalls, Wireshark, Protocolos TCP/IP, Análise de Logs.</td>
-        </tr>
-        <tr>
-          <td>⚔️ <b>Ofensiva & Testes (Red Team)</b></td>
-          <td>Identificação e exploração controlada de vulnerabilidades, testes de intrusão (<i>Pentest</i>) e simulação de ataques reais.</td>
-          <td>Hardening de Sistemas, OWASP Top 10, Kali Linux, Ferramentas de Varredura (Nmap).</td>
-        </tr>
-        <tr>
-          <td>📜 <b>Governança, Risco & Compliance (GRC)</b></td>
-          <td>Desenvolvimento de políticas de segurança, adequação a leis de privacidade e auditorias de conformidade normativa.</td>
-          <td>LGPD / GDPR, Norma ISO 27001, Framework NIST, Análise de Riscos.</td>
-        </tr>
-        <tr>
-          <td>🔄 <b>Cyber Resiliência & Gestão de Crise</b></td>
-          <td>Continuidade de negócios (BCP), planos de recuperação de desastres (DRP) e alinhamento executivo pós-incidente.</td>
-          <td>Gestão de Continuidade, Gestão de Riscos, Comunicação Assertiva.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</details>
+---
 
-<hr/>
+## 🧭 Mapeamento de Trilhas e Portas de Entrada
 
-<details open>
-  <summary><h2 align="center">💡 2. Superando Mitos da Área de Segurança</h2></summary>
-  <br/>
+| Perfil de Afinidade | Trilhas Correspondentes | Termos de Busca para Vagas de Entrada |
+| :--- | :--- | :--- |
+| **Investigação e monitoramento** | SOC, Resposta a Incidentes, Forense Digital, Threat Intel | `SOC Analyst`, `Junior Security Analyst`, `Incident Analyst` |
+| **Processos, governança e riscos** | GRC, Privacidade (LGPD), Auditoria, Continuidade de Negócios | `GRC Analyst`, `Risk Analyst`, `IT Audit`, `Privacy Analyst` |
+| **Infraestrutura e arquitetura** | Cloud Security, Redes, IAM (Gestão de Identidade) | `IAM Analyst`, `Network Analyst`, `Cloud Analyst`, `NOC Analyst` |
+| **Testes ofensivos** | Pentest, Red Team, Application Security | `Vulnerability Management`, `AppSec Analyst` |
 
-  <div align="center">
-   <blockquote>
+> *"Não escolha Cyber primeiro. Descubra que tipo de problema você gosta de resolver dentro de Cyber."*
 
-❌ <b>Mito 2: "É impossível conseguir a primeira vaga sem anos prévios de experiência comprovada."</b><br>
-✔️ <b>Fato:</b> O mercado valoriza candidatos com projetos práticos documentados (<i>Homelabs / GitHub</i>), participação em desafios (CTFs) e clareza na exposição de conceitos técnicos fundamentais.
+---
 
-<br><br>
+## 🛠️ Ato 3: Construção de Experiência e Certificações
 
-❌ <b>Mito 3: "Transição de carreira a partir de outras áreas é uma desvantagem competitiva."</b><br>
-✔️ <b>Fato:</b> Profissionais em transição agregam maturidade profissional, visão sistêmica de negócio e facilidade no relacionamento interpessoal, atributos raros e altamente requisitados por lideranças técnicas.
+* 💻 **Prática comprovada:** O mercado valoriza candidatos que demonstram iniciativa prática: *"Eu criei um laboratório, simulei um ataque, analisei os logs no Wireshark e documentei o processo"*.
+* 📜 **Certificações de Entrada:**
+  * **Cisco CCST Cybersecurity:** Cobre fundamentos de rede, segurança de endpoints, vulnerabilidades e gestão de incidentes.
+  * **ISC2 Certified in Cybersecurity (CC):** Princípios de segurança, continuidade de negócios, controles de acesso e operações.
+* 🤖 **IA como aceleradora de aprendizado:** Utilizar modelos de linguagem como tutores técnicos para simular incidentes, dissecar logs e sugerir cenários de testes, mantendo sempre o senso crítico analítico ativo.
 
-</blockquote>
+---
 
-  </div>
-</details>
+## 🗓️ Roteiro Estratégico de 90 Dias
 
-<hr/>
+| Janela | Etapa | Ações Chave |
+| :--- | :--- | :--- |
+| **0 a 30 dias** | **Fundamentos** | Consolidar redes e protocolos; definir foco (SOC); iniciar inglês técnico; organizar perfil de estudos no LinkedIn. |
+| **31 a 60 dias** | **Prática** | Montar laboratórios práticos (Packet Tracer, Wireshark); documentar repositórios técnicos no GitHub; participar de comunidades da área. |
+| **61 a 90 dias** | **Mercado** | Obter certificação de entrada; simular entrevistas técnicas; realizar aplicações ativas mesmo sem preencher 100% dos requisitos descritos. |
 
-<details open>
-  <summary><h2 align="center">🚀 3. Plano Estratégico de Empregabilidade & Posicionamento</h2></summary>
-  <br/>
+---
 
-  <div align="center">
-    <ul style="display:inline-block; text-align:left; max-width:900px;">
-      <li>✅ <b>Portfólio Prático e Visível:</b> Manter topologias e laboratórios práticos do Cisco Packet Tracer e relatórios técnicos devidamente documentados no GitHub.</li>
-      <li>✅ <b>Fundamentação Conceitual Sólida:</b> Dominar os pilares da Tríade CIA, a arquitetura dos Modelos OSI e TCP/IP e os controles de segurança de perímetro.</li>
-      <li>✅ <b>Posicionamento Ativo no LinkedIn:</b> Compartilhar resumos de masterclasses, artigos de reflexão técnica e certificados de formação contínua.</li>
-      <li>✅ <b>Networking e Engajamento:</b> Conectar-se com profissionais da área, participar de mentorias e engajar-se em comunidades técnicas femininas de tecnologia.</li>
-    </ul>
-  </div>
-</details>
+## 💡 Minha Visão (Resumo SOC)
 
-<hr/>
+> O direcionamento do Fábio Isaguirre confirma que a vaga júnior em um time de SOC não exige saber tudo de antemão, mas exige **método, capacidade investigativa e evidência prática**.
+>
+> A minha experiência como Assistente de Projetos de TI complementa a rotina de segurança com controle de prazos, alinhamento de SLAs e comunicação assertiva entre áreas técnicas. Unir essa base de processos aos laboratórios de monitoramento e análise de tráfego transforma o aprendizado em entregas concretas para o time de resposta a incidentes.
+
+<br>
 
 <div align="center">
-  <h3>👩‍💻 Desenvolvido por</h3>
-  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
-  <p>
-    <a href="https://github.com/fer-isa">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
+  <a href="../">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Webinars-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
 </div>
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A4365,50:1A365D,100:0B1D3A&height=100&section=footer" width="100%" />
