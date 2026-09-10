@@ -11,34 +11,46 @@
 <br>
 
 ## 📌 Visão Geral
-Tão importante quanto saber analisar um alerta de segurança é saber comunicar o que está acontecendo. Este documento foca na habilidade de pensar de forma estruturada e se comunicar com assertividade no ambiente de tecnologia.
+Tão importante quanto saber analisar tecnicamente um alerta de segurança é saber comunicar o que está acontecendo e tomar decisões lógicas. Este módulo foca em diferenciar os estilos de comunicação, aplicar o pensamento crítico na resolução de problemas e estruturar um "Elevator Pitch" profissional.
 
 ---
 
-## 🗣️ Comunicação Assertiva
+## 🗣️ Os 3 Estilos de Comunicação
 
-Compreender a comunicação assertiva é fundamental para o trabalho em equipe. 
-* **Passiva:** Não expõe opiniões e foge de conflitos, prejudicando o próprio crescimento.
-* **Agressiva:** Impõe opiniões desrespeitando o espaço e o conhecimento do outro.
-* **Assertiva (O Alvo):** Expressa ideias de forma clara, respeitosa e direta. É a comunicação esperada de um profissional que precisa reportar problemas sem gerar pânico desnecessário.
+No ambiente corporativo, a forma como transmitimos uma mensagem determina o sucesso ou o fracasso de um projeto.
 
-*(Espaço reservado para documentar o Elevator Pitch construído nas aulas ao vivo).*
+1. **Comunicação Passiva:** O profissional evita conflitos a todo custo, não expressa suas ideias e acaba absorvendo demandas irrealistas. Na área de TI, isso resulta em sobrecarga e falhas ocultas.
+2. **Comunicação Agressiva:** O foco é impor a própria opinião, atropelando a equipe. Gera um ambiente de trabalho tóxico e falhas na colaboração.
+3. **Comunicação Assertiva:** É o equilíbrio. Significa expressar ideias, limites e alertas de forma clara, direta e respeitosa. É a habilidade mais exigida para quem trabalha em equipes de alta pressão.
 
 ---
 
-## 🧠 Pensamento Crítico Aplicado
+## 🧠 Pensamento Crítico: Pensar por Conta Própria
 
-Desenvolver o pensamento crítico é essencial para analisar situações sob pressão e tomar as melhores decisões.
-* **Pensar por conta própria:** Questionar as informações recebidas em vez de aceitá-las cegamente.
-* **Triagem de Informações:** Separar o que é fato do que é suposição, uma habilidade vital para investigações de segurança.
+O pensamento crítico é a capacidade de analisar situações de forma objetiva para tomar decisões embasadas, sem se deixar levar pelo "efeito manada" ou por suposições.
 
+* **Análise de Fatos vs. Opiniões:** Em vez de aceitar a primeira resposta que aparece, o pensamento crítico exige investigar a raiz do problema.
+* **Aplicação Prática:** A comunidade, os recursos online e a aprendizagem contínua são os pilares que alimentam esse pensamento. Quanto mais repertório técnico e colaborativo temos, mais refinada fica a nossa capacidade de julgar uma situação.
+
+---
+
+## 🎙️ O Meu Elevator Pitch
+
+O *Elevator Pitch* (Discurso de Elevador) é a aplicação máxima da comunicação assertiva: como me apresentar, mostrar meu valor e meu objetivo de forma clara e rápida (no tempo de uma viagem de elevador).
+
+> **Apresentação Pessoal:**
+> "Olá! Sou a Fernanda Isabelli. Tenho background como Assistente de Projetos de TI, onde desenvolvi uma visão muito forte de processos, organização de tempo e comunicação assertiva. Atualmente, estou em uma transição de carreira focada 100% em Cibersegurança, com o objetivo de atuar em um time de SOC. 
+> 
+> Nos últimos meses, tenho construído uma base técnica sólida através da Formação Mulher Digital e da Cisco Academy. Minha rotina envolve laboratórios práticos de redes e análise de tráfego com ferramentas como Wireshark e Packet Tracer. 
+> 
+> Meu objetivo hoje é trazer a minha capacidade de organização, pensamento crítico e documentação para uma equipe de resposta a incidentes, somando na triagem de alertas enquanto continuo me desenvolvendo e aprendendo na linha de frente."
 ---
 
 ## 💡 Minha Visão (Resumo SOC)
 
-> O **Elevator Pitch** e a comunicação assertiva parecem assuntos de vendas, mas são ferramentas de sobrevivência em um SOC. 
+> O Pensamento Crítico e a Comunicação Assertiva são o "sistema nervoso" de um Centro de Operações de Segurança (SOC).
 > 
-> Imagine identificar um possível ransomware na rede. Se a minha comunicação for passiva, o tempo de resposta atrasa; se for agressiva, gero caos na equipe. A comunicação assertiva me permite escalar o incidente de forma técnica, objetiva e clara para os gestores. Aliada ao pensamento crítico — que me impede de pular para conclusões precipitadas antes de cruzar os logs —, essa é a base de um analista de segurança de alto nível.
+> Durante a triagem de um incidente cibernético, o **pensamento crítico** é o que impede o analista de entrar em pânico diante de um falso positivo ou ignorar um log camuflado. É preciso pensar por conta própria e conectar os pontos. Já a **comunicação assertiva** entra em cena na hora de escalar o problema: eu preciso avisar a diretoria sobre uma vulnerabilidade de forma urgente e clara, sem ser agressiva, mas também sem ser passiva a ponto de minimizarem o risco.
 
 <br>
 
