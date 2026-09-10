@@ -11,49 +11,49 @@
 <br>
 
 ## 📌 Visão Geral
-Neste módulo, respondemos à pergunta clássica: "Como o computador sabe para qual aplicativo enviar a informação?"[cite: 2]. Exploramos os protocolos da Camada de Transporte, o mapa das portas essenciais para o exame CCST e como monitorar o tráfego usando o Wireshark[cite: 2].
+Neste módulo, respondemos à pergunta clássica: "Como o computador sabe para qual aplicativo enviar a informação?". Exploramos os protocolos da Camada de Transporte, o mapa das portas essenciais para o exame CCST e como monitorar o tráfego usando o Wireshark.
 
 ---
 
 ## 📝 A "Rede de Papel" (Entendendo a Lógica)
 
 ### 1. TCP vs. UDP (Os Entregadores)
-Eles moram na Camada de Transporte, mas trabalham de formas opostas[cite: 2]:
-* 🤝 **TCP (A Entrega Registrada):** É confiável, garante a ordem dos pacotes e retransmite o que for perdido[cite: 2]. Ele usa o processo de três etapas (*Three-Way Handshake*: SYN ➔ SYN+ACK ➔ ACK) para estabelecer conexão antes de enviar os dados[cite: 2]. **Atenção:** TCP traz confiabilidade, mas não traz criptografia (segurança é com o HTTPS/TLS)[cite: 2]!
-* 🚀 **UDP (O Megafone):** Não exige conexão, não confirma recebimento e não retransmite nada[cite: 2]. É muito mais rápido e leve (menor overhead), ideal para chamadas de vídeo, jogos e streaming[cite: 2].
+Eles moram na Camada de Transporte, mas trabalham de formas opostas:
+* 🤝 **TCP (A Entrega Registrada):** É confiável, garante a ordem dos pacotes e retransmite o que for perdido. Ele usa o processo de três etapas (*Three-Way Handshake*: SYN ➔ SYN+ACK ➔ ACK) para estabelecer conexão antes de enviar os dados. **Atenção:** TCP traz confiabilidade, mas não traz criptografia (segurança é com o HTTPS/TLS)!
+* 🚀 **UDP (O Megafone):** Não exige conexão, não confirma recebimento e não retransmite nada. É muito mais rápido e leve (menor overhead), ideal para chamadas de vídeo, jogos e streaming.
 
 ### 2. Portas e Sockets (A Porta da Casa)
-* **A Lógica:** O IP encontra o computador na rede; a Porta encontra qual aplicação/serviço deve receber os dados dentro daquele computador[cite: 2]. 
-* **O Socket:** É a junção do IP com a Porta (Ex: `192.168.1.10:443`)[cite: 2].
-* **Portas Temporárias:** O computador usa portas altas e temporárias (ex: `52134`) para diferenciar várias conexões acontecendo ao mesmo tempo (como múltiplas abas do navegador abertas)[cite: 2].
+* **A Lógica:** O IP encontra o computador na rede; a Porta encontra qual aplicação/serviço deve receber os dados dentro daquele computador.
+* **O Socket:** É a junção do IP com a Porta (Ex: `192.168.1.10:443`).
+* **Portas Temporárias:** O computador usa portas altas e temporárias (ex: `52134`) para diferenciar várias conexões acontecendo ao mesmo tempo (como múltiplas abas do navegador abertas).
 
 ---
 
 ## ⚙️ A Prática (O que importa)
 
 ### 📋 Tabela de Portas Essenciais (Foco CCST)
-As portas de 0 a 1023 são conhecidas e reservadas para serviços padrão[cite: 2].
+As portas de 0 a 1023 são conhecidas e reservadas para serviços padrão.
 
 | Porta | Protocolo | Transporte | O que faz na prática? |
 | :--- | :--- | :--- | :--- |
-| **20/21** | FTP | TCP | Transferência de arquivos[cite: 2]. |
-| **22** | SSH | TCP | Acesso remoto seguro (criptografado)[cite: 2]. |
-| **23** | Telnet | TCP | Acesso remoto SEM segurança[cite: 2]. |
-| **25** | SMTP | TCP | Envio de e-mails[cite: 2]. |
-| **53** | DNS | UDP/TCP | Traduz nomes (URLs) para endereços IP[cite: 2]. |
-| **67/68** | DHCP | UDP | Entrega endereços IP automaticamente aos dispositivos[cite: 2]. |
-| **80** | HTTP | TCP | Navegação em sites sem criptografia[cite: 2]. |
-| **443** | HTTPS | TCP | Navegação em sites COM criptografia[cite: 2]. |
-| **110 / 143** | POP3 / IMAP | TCP | Recebimento e leitura de e-mails[cite: 2]. |
-| **161/162** | SNMP | UDP | Monitoramento de equipamentos de rede[cite: 2]. |
-| **3389** | RDP | TCP/UDP | Acesso remoto à tela do Windows[cite: 2]. |
+| **20/21** | FTP | TCP | Transferência de arquivos. |
+| **22** | SSH | TCP | Acesso remoto seguro (criptografado). |
+| **23** | Telnet | TCP | Acesso remoto SEM segurança. |
+| **25** | SMTP | TCP | Envio de e-mails. |
+| **53** | DNS | UDP/TCP | Traduz nomes (URLs) para endereços IP. |
+| **67/68** | DHCP | UDP | Entrega endereços IP automaticamente aos dispositivos. |
+| **80** | HTTP | TCP | Navegação em sites sem criptografia. |
+| **443** | HTTPS | TCP | Navegação em sites COM criptografia. |
+| **110 / 143** | POP3 / IMAP | TCP | Recebimento e leitura de e-mails. |
+| **161/162** | SNMP | UDP | Monitoramento de equipamentos de rede. |
+| **3389** | RDP | TCP/UDP | Acesso remoto à tela do Windows. |
 
 <br>
 
 ### 🦈 Wireshark (O Microscópio da Rede)
-* É uma ferramenta que captura os dados (pacotes) passando pela rede local[cite: 2].
-* Permite ver tudo o que entra e sai da máquina[cite: 2].
-* Usa **Filtros** para isolar protocolos (TCP, UDP) ou portas específicas, facilitando a investigação[cite: 2].
+* É uma ferramenta que captura os dados (pacotes) passando pela rede local.
+* Permite ver tudo o que entra e sai da máquina.
+* Usa **Filtros** para isolar protocolos (TCP, UDP) ou portas específicas, facilitando a investigação.
 
 ---
 
@@ -61,7 +61,7 @@ As portas de 0 a 1023 são conhecidas e reservadas para serviços padrão[cite: 
 
 > Memorizar as portas lógicas é vital para o exame CCST, mas o seu verdadeiro poder brilha dentro do SOC! 
 > 
-> Se eu abro o **Wireshark** e filtro o tráfego identificando uma comunicação saindo pela **Porta 23 (Telnet)**[cite: 2], eu imediatamente ligo um alerta vermelho: alguém está acessando equipamentos remotamente sem criptografia[cite: 2], e qualquer atacante interceptando a rede poderia ler as senhas em texto puro. Entender a diferença entre a entrega garantida do TCP e a velocidade sem checagem do UDP[cite: 2] também me ajuda a perfilar ataques, como os de negação de serviço (DDoS).
+> Se eu abro o **Wireshark** e filtro o tráfego identificando uma comunicação saindo pela **Porta 23 (Telnet)**, eu imediatamente ligo um alerta vermelho: alguém está acessando equipamentos remotamente sem criptografia, e qualquer atacante interceptando a rede poderia ler as senhas em texto puro. Entender a diferença entre a entrega garantida do TCP e a velocidade sem checagem do UDP também me ajuda a perfilar ataques, como os de negação de serviço (DDoS).
 
 <br>
 
