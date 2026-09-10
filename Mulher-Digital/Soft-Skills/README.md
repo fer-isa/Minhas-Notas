@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=Soft%20Skills%20e%20Carreira&fontSize=50&fontColor=FFFFFF&fontAlignY=35&desc=Desenvolvimento%20Profissional%20%7C%20Mulher%20Digital&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=Habilidades%20para%20o%20Trabalho&fontSize=42&fontColor=FFFFFF&fontAlignY=35&desc=Soft%20Skills%20e%20Empregabilidade%20%7C%20Forma%C3%A7%C3%A3o%20Mulher%20Digital&descAlignY=55&descSize=18&descColor=58A6FF&animation=fadeIn" width="100%" />
 
 <img src="https://img.shields.io/badge/Carreira-161B22?style=for-the-badge&logo=linkedin&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/Soft_Skills-161B22?style=for-the-badge&logo=mindmap&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Soft_Skills-161B22?style=for-the-badge&logo=target&logoColor=58A6FF" />
 <img src="https://img.shields.io/badge/Trilha_Mulher_Digital-161B22?style=for-the-badge&logo=gitbook&logoColor=58A6FF" />
 
 </div>
@@ -11,20 +11,20 @@
 <br>
 
 ## 📌 Visão Geral
-Anotar conceitos de tecnologia é fácil, mas documentar habilidades comportamentais exige uma abordagem diferente. Este espaço é dedicado a traduzir conceitos abstratos em **situações reais do dia a dia corporativo**, unindo a visão de assistência de projetos com a rotina de um Centro de Operações de Segurança (SOC).
+Documentação estruturada de competências sociocomportamentais, planejamento de carreira e empregabilidade para tecnologia. Este diretório integra o conteúdo das aulas da Formação Mulher Digital com a apostila da professora Samia Melifian, traduzindo conceitos de desenvolvimento profissional para a rotina prática de um Centro de Operações de Segurança (SOC).
 
 ---
 
 ## 🧠 Como eu documento Soft Skills?
 
-O foco aqui não é decorar teorias de RH, mas criar "manuais de sobrevivência" práticos:
-* **Comunicação:** Como traduzir um incidente técnico crítico para a linguagem de negócios, permitindo que a diretoria tome decisões rápidas.
-* **Trabalho em Equipe:** Como estruturar uma passagem de turno (*handoff*) limpa e eficiente para que a investigação de uma ameaça não pare.
-* **Pensamento Crítico:** Como manter a calma sob pressão e usar a lógica para priorizar alertas reais no meio de milhares de falsos positivos.
+O foco aqui não é registrar definições teóricas abstratas, mas aplicar manuais de conduta profissional:
+* **Comunicação Assertiva:** Como traduzir incidentes críticos com clareza para equipes multidisciplinares e liderança.
+* **Pensamento Crítico:** Triagem lógica de eventos para priorizar riscos reais e evitar conclusões precipitadas em investigações.
+* **Método e Organização:** Gestão de SLAs, rotinas de documentação técnica e passagem de turno (*handoff*) estruturada.
 
 ---
 
-## 🗂️ Índice de Anotações
+## 🗂️ Índice de Documentos
 
 <div align="center">
 
@@ -32,19 +32,19 @@ O foco aqui não é decorar teorias de RH, mas criar "manuais de sobrevivência"
 <tr>
 <td width="50%" valign="top">
 
-### 🗣️ 01. Comunicação e Reporte
-Como escrever relatórios de incidentes claros, diretos e sem jargões desnecessários para a equipe.
+### 🧭 01. Roteiro de Carreira e Empregabilidade
+Autoconhecimento, Matriz SWOT, exercício do Ikigai e desmistificação do mercado inicial de tecnologia.
 
-**[Em breve ⏳](./01-Comunicacao-e-Reporte)**
+**[Acessar documento →](./01-Roteiro-de-Carreira-e-Empregabilidade.md)**
 
 </td>
 
 <td width="50%" valign="top">
 
-### 🤝 02. Trabalho em Equipe
-A dinâmica de um time de TI, passagem de bastão entre turnos e colaboração em momentos de crise.
+### 🗣️ 02. Comunicação Assertiva e Crítica
+Os três estilos de comunicação, raciocínio investigativo e o Elevator Pitch estruturado para SOC.
 
-**[Em breve ⏳](./02-Trabalho-em-Equipe)**
+**[Acessar documento →](./02-Comunicacao-Assertiva-e-Pensamento-Critico.md)**
 
 </td>
 </tr>
@@ -52,19 +52,30 @@ A dinâmica de um time de TI, passagem de bastão entre turnos e colaboração e
 <tr>
 <td width="50%" valign="top">
 
-### 🎯 03. Resolução de Problemas
-Metodologias práticas para não travar sob pressão e destrinchar problemas complexos em etapas.
+### 📄 03. Currículo Estratégico e ATS
+Regras de formatação para robôs de triagem (ATS), palavras-chave e fórmula de escrita orientada a impacto.
 
-**[Em breve ⏳](./03-Resolucao-de-Problemas)**
+**[Acessar documento →](./03-Curriculo-Estrategico-e-ATS.md)**
 
 </td>
 
 <td width="50%" valign="top">
 
-### 💼 04. Posicionamento Profissional
-Transição de carreira, gestão de tarefas e como a visão de negócios apoia a segurança da informação.
+### ⭐ 04. Entrevistas e Método STAR
+Banco de respostas pela metodologia STAR, perguntas técnicas de segurança e conduta ética em processos.
 
-**[Em breve ⏳](./04-Posicionamento-Profissional)**
+**[Acessar documento →](./04-Preparacao-para-Entrevistas-e-Metodo-STAR.md)**
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+
+### 🎯 05. Plano de Carreira e Aprendizagem Contínua
+Trilha de desenvolvimento de 12 semanas, plano de ação de 30 dias e organização financeira consciente.
+
+**[Em breve ⏳](./05-Plano-de-Carreira-e-Aprendizagem-Continua.md)**
 
 </td>
 </tr>
