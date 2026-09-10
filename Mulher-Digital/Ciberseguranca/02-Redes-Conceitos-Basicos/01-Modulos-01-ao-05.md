@@ -1,125 +1,70 @@
 <div align="center">
-  <img src="../../assets/introduction-to-cybersecurity.png" width="180" alt="Conceitos Básicos de Redes" />
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=220&section=header&text=Redes:%20Conceitos%20B%C3%A1sicos&fontSize=50&fontColor=FFFFFF&fontAlignY=35&desc=M%C3%B3dulos%201%20ao%205%20%7C%20Forma%C3%A7%C3%A3o%20Mulher%20Digital&descAlignY=55&descSize=20&descColor=58A6FF&animation=fadeIn" width="100%" />
 
-<h2>🌐 Conceitos Básicos de Redes — Módulos 1 ao 5</h2>
-<p><b>Formação Mulher Digital • Trilha de Cibersegurança & Infraestrutura</b></p>
-
-<p>
-  <img src="https://img.shields.io/badge/Cisco_Networking_Academy-Redes_de_Computadores-005073?style=for-the-badge&logo=cisco&logoColor=white" alt="Redes" />
-  <img src="https://img.shields.io/badge/Modelos-OSI_%7C_TCP%2FIP-0A84FF?style=for-the-badge" alt="OSI e TCP/IP" />
-  <img src="https://img.shields.io/badge/Trilha-Mulher_Digital-8A2BE2?style=for-the-badge" alt="Mulher Digital" />
-  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status" />
-</p>
+<img src="https://img.shields.io/badge/Cisco_Academy-161B22?style=for-the-badge&logo=cisco&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/OSI_e_TCP/IP-161B22?style=for-the-badge&logo=sitemap&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/Trilha_Mulher_Digital-161B22?style=for-the-badge&logo=gitbook&logoColor=58A6FF" />
 
 </div>
 
+<br>
 
-<hr/>
+## 📌 Visão Geral
+Um guia rápido e sem complicação sobre como os computadores conversam entre si, passando pelos tipos de rede, os equipamentos que usamos e as regras "invisíveis" que fazem a internet funcionar.
 
-<h3>📌 Visão Geral</h3>
-<p>Um guia rápido e sem complicação sobre como os computadores conversam entre si, passando pelos tipos de rede, os equipamentos que usamos e as regras "invisíveis" que fazem a internet funcionar.</p>
+---
 
-<hr/>
+## 📝 A "Rede de Papel" (Entendendo a Lógica)
 
-<details open>
-  <summary><h3>📝 A "Rede de Papel" (Entendendo a Lógica)</h3></summary>
-  <br/>
+### 1. Tamanho das Redes (Do quarto para o mundo)
+* 🏠 **LAN (Rede Local):** É a rede da nossa casa ou da nossa sala de aula. Fica tudo num espaço físico pequeno.
+* 🏢 **SOHO:** Uma rede um pouco mais arrumadinha para pequenos negócios e home office.
+* 🌍 **WAN (Rede Ampla):** É a rede que conecta cidades e países. A própria Internet é uma WAN gigante!
 
-  <p><b>1. Tamanho das Redes (Do quarto para o mundo)</b></p>
-  <ul>
-    <li>🏠 <b>LAN (Rede Local):</b> É a rede da nossa casa ou da nossa sala de aula. Fica tudo num espaço físico pequeno.</li>
-    <li>🏢 <b>SOHO:</b> Uma rede um pouco mais arrumadinha para pequenos negócios e home office.</li>
-    <li>🌍 <b>WAN (Rede Ampla):</b> É a rede que conecta cidades e países. A própria Internet é uma WAN gigante!</li>
-  </ul>
+### 2. Quem é quem na festa?
+* **Dispositivos Finais (Os Convidados):** É quem manda ou recebe a informação. Nossos PCs, notebooks e celulares.
+* **Dispositivos Intermediários (Os Garçons):** São os Switches e Roteadores. Eles não criam a mensagem, o trabalho deles é só garantir que ela chegue no destino certo pelo melhor caminho.
 
-  <p><b>2. Quem é quem na festa?</b></p>
-  <ul>
-    <li><b>Dispositivos Finais (Os Convidados):</b> É quem manda ou recebe a informação. Nossos PCs, notebooks e celulares.</li>
-    <li><b>Dispositivos Intermediários (Os Garçons):</b> São os Switches e Roteadores. Eles não criam a mensagem, o trabalho deles é só garantir que ela chegue no destino certo pelo melhor caminho.</li>
-  </ul>
-</details>
+---
 
-<hr/>
+## ⚙️ A Prática (O que importa)
 
-<details open>
-  <summary><h3>⚙️ A Prática (O que importa)</h3></summary>
-  <br/>
+### 🔌 Os Caminhos Físicos (Meios de Transmissão)
 
-  <p><b>Os Caminhos Físicos (Meios de Transmissão)</b></p>
-  <table width="100%">
-    <thead>
-      <tr bgcolor="#1f242c">
-        <th align="left">Tipo</th>
-        <th align="left">Como funciona na prática?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><b>Wi-Fi (Sem fio)</b></td>
-        <td>Usa ondas de rádio no ar. Dá mobilidade, mas pode sofrer interferência de paredes e outros eletrônicos.</td>
-      </tr>
-      <tr>
-        <td><b>Cabo de Cobre (UTP)</b></td>
-        <td>O famoso cabo azul de rede. Usa energia (pulsos elétricos) para mandar os dados do seu PC até o Switch.</td>
-      </tr>
-      <tr>
-        <td><b>Fibra Óptica</b></td>
-        <td>Usa feixes de luz! É absurdamente rápida, não pega interferência de energia e alcança quilômetros de distância.</td>
-      </tr>
-    </tbody>
-  </table>
+| Tipo | Como funciona na prática? |
+| :--- | :--- |
+| **Wi-Fi (Sem fio)** | Usa ondas de rádio no ar. Dá mobilidade, mas pode sofrer interferência de paredes e outros eletrônicos. |
+| **Cabo de Cobre (UTP)** | O famoso cabo azul de rede. Usa energia (pulsos elétricos) para mandar os dados do seu PC até o Switch. |
+| **Fibra Óptica** | Usa feixes de luz! É absurdamente rápida, não pega interferência de energia e alcança quilômetros de distância. |
 
-  <br>
+<br>
 
-  <p><b>Modelos OSI e TCP/IP (A Língua das Redes)</b></p>
-  <table width="100%">
-    <thead>
-      <tr bgcolor="#1f242c">
-        <th align="left">Camada Principal</th>
-        <th align="left">O que faz?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><b>Aplicação (A Tela)</b></td>
-        <td>Onde tudo começa. É o nosso navegador pedindo para abrir um site (usando HTTP ou HTTPS, por exemplo).</td>
-      </tr>
-      <tr>
-        <td><b>Transporte (A Entrega)</b></td>
-        <td>O controle de qualidade. Verifica se o pacote vai ser entregue inteiro e com garantia (TCP) ou o mais rápido possível (UDP).</td>
-      </tr>
-      <tr>
-        <td><b>Rede (O Correio)</b></td>
-        <td>É aqui que moram os endereços IP (IPv4). O roteador olha para esse IP e decide a melhor rota para a mensagem seguir.</td>
-      </tr>
-      <tr>
-        <td><b>Física (O Cabo)</b></td>
-        <td>A parte palpável. Os bits (0 e 1) virando luz na fibra óptica ou eletricidade no cabo de cobre.</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
+### 📚 Modelos OSI e TCP/IP (A Língua das Redes)
 
-<hr/>
+| Camada Principal | O que faz? |
+| :--- | :--- |
+| **Aplicação (A Tela)** | Onde tudo começa. É o nosso navegador pedindo para abrir um site (usando HTTP ou HTTPS). |
+| **Transporte (A Entrega)** | O controle de qualidade. Verifica se o pacote vai ser entregue inteiro (TCP) ou o mais rápido possível (UDP). |
+| **Rede (O Correio)** | É aqui que moram os endereços IP. O roteador olha para esse IP e decide a melhor rota. |
+| **Física (O Cabo)** | A parte palpável. Os bits (0 e 1) virando luz na fibra óptica ou eletricidade no cabo de cobre. |
 
-<h3>💡 Minha Visão (O Resumo da Fer)</h3>
-<p><i>
-O maior "clique" que eu tive estudando esses modelos (OSI e TCP/IP) foi perceber que a internet não tem nada de mágica: é tudo uma questão de "envelopamento"! Quando eu digito um endereço no navegador, meu pedido vai ganhando várias camadas de proteção, como se fossem envelopes um dentro do outro, até virar luz numa fibra óptica ou pulso elétrico num cabo. Outra coisa que clareou muito a minha mente foi separar as funções: meu PC é quem pede a informação, mas quem faz o trabalho sujo de organizar o trânsito e achar o caminho no meio do mundo são os roteadores. Aprender a dividir a rede em camadas é o segredo de ouro para fazer um bom troubleshooting e achar rápido onde está o problema quando a internet cai!
-</i></p>
+---
 
-<hr/>
+## 💡 Minha Visão (Resumo SOC)
+
+> O maior "clique" que eu tive estudando os modelos (OSI e TCP/IP) foi perceber que a internet não tem nada de mágica: é tudo uma questão de **"envelopamento"**! 
+> 
+> Quando eu digito um endereço, meu pedido vai ganhando várias camadas de proteção, como envelopes um dentro do outro, até virar luz ou pulso elétrico. Aprender a dividir a rede em camadas mentais é o **segredo de ouro para fazer um bom troubleshooting**. Se a internet caiu, eu não tento adivinhar do zero: eu olho se o cabo está ligado (Física), se o PC pegou IP (Rede) ou se o DNS falhou (Aplicação).
+
+<br>
 
 <div align="center">
-  <h3>👩‍💻 Desenvolvido por</h3>
-  <p><b>Fernanda Isabelli Oliveira da Silva</b></p>
-  <p>
-    <a href="https://github.com/fer-isa">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fernanda-isabelli/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
+  <a href="https://github.com/fer-isa/Minhas-Notas/tree/main/Mulher-Digital/Ciberseguranca">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Índice_de_Cibersegurança-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
 </div>
 
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2A4365,50:1A365D,100:0B1D3A&height=100&section=footer" width="100%" />
