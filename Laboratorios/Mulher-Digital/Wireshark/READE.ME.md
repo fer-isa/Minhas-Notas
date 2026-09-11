@@ -38,7 +38,8 @@ arp
 
 <div align="center">
 
-<img src=<img width="1245" height="1022" alt="Captura de tela 2026-09-11 015734" src="https://github.com/user-attachments/assets/e971545c-fa51-4132-a739-a3cbc4baa82a" width="900px" />
+<img width="1245" height="1022" alt="Captura de tela 2026-09-11 015734" src="https://github.com/user-attachments/assets/f6c77dde-ac3a-4f5b-bab6-4ff699f5b5ca" />
+
 
 
 <p><i>Captura realizada na interface Wi-Fi com o filtro ARP aplicado.</i></p>
@@ -105,7 +106,7 @@ Ao selecionar um pacote, comecei a explorar informações como:
 
 <div align="center">
 
-<img src=<img width="1307" height="995" alt="Captura de tela 2026-09-11 015748" src="https://github.com/user-attachments/assets/d0971aeb-fa6b-4dca-a406-ac36b18b8d36" width="900px"/>
+<img width="1307" height="995" alt="Captura de tela 2026-09-11 015748" src="https://github.com/user-attachments/assets/d0971aeb-fa6b-4dca-a406-ac36b18b8d36" width="900px"/>
 
 
 <p><i>Detalhes observados durante a captura no Wireshark.</i></p>
