@@ -10,43 +10,43 @@
 <br>
 
 ## 📌 Visão Geral
-Em Cibersegurança, a pressão e a constante evolução tecnológica exigem uma base emocional sólida. Este documento consolida os princípios de autoconhecimento, gestão de tempo e mentalidade da minha transição de carreira.
+Em Cibersegurança e operações de SOC, a pressão e a constante evolução exigem uma base emocional e técnica sólida. Este documento consolida os princípios de autoconhecimento, gestão de tempo e mentalidade da minha transição de carreira, sempre com foco em Segurança da Informação e suporte de TI.
 
 ---
 
 ## 🧠 Filosofias de Crescimento
 
 ### 1. Shoshin (Mente de Principiante)
-Conceito do Zen Budismo que representa a atitude de abordar qualquer aspeto com humildade, curiosidade e abertura, deixando de lado preconceitos independentemente do nível de experiência.
+A atitude de abordar a análise de incidentes, redes e vulnerabilidades com humildade, curiosidade e abertura. Num SOC, é vital manter a mente aberta para aprender sobre novas ameaças e ferramentas sem ideias preconcebidas.
 
 ### 2. A Janela de Johari
-Modelo que ilustra como comunicamos e como somos percebidos.
-* **Aberta:** O que eu e os outros sabemos sobre mim.
-* **Cega:** O que os outros veem em mim, mas eu não percebo.
-* **Oculta:** O que eu sei sobre mim, mas não partilho.
-* **Desconhecida:** O que ninguém sabe ainda, nem eu.
+Um modelo sobre como comunico e como sou percebida em equipa.
+* **Aberta:** O que partilho claramente (ex: o meu foco em SOC, a minha dedicação aos laboratórios de redes).
+* **Cega:** Os pontos fortes ou áreas de melhoria que a minha equipa e professores notam, mas que eu não percebo.
+* **Oculta:** As minhas inseguranças ocasionais, como o medo de errar perante desafios técnicos.
+* **Desconhecida:** A minha capacidade e potencial futuro para atuar na linha da frente e mitigar incidentes complexos.
 
 ### 3. O Capricho
-"Fazer o melhor hoje, com as condições que se tem hoje." Isso combate a mediocridade e foca no que é possível no momento.
+"Fazer o melhor hoje, com as condições que se tem hoje." Foco nos laboratórios e na documentação atual, construindo a base de forma sólida, sem ansiedade por aquilo que ainda não domino.
 
 ---
 
-## 🧭 Ikigai: O Meu Propósito
-O Ikigai é a interseção entre quatro pilares essenciais para encontrar o propósito profissional:
-1. 💛 **O que amo fazer:** Atividades que me dão prazer e energia, como ensinar, criar soluções e ajudar pessoas.
-2. 🛠️ **No que sou boa:** Os meus talentos naturais, como lógica, programação e comunicação.
-3. 🌍 **O que o mundo precisa:** Causas que me tocam, como inclusão e diversidade na área de TI.
-4. 💰 **Pelo que posso ser paga:** Profissões conectadas às minhas habilidades, como Desenvolvedora, Mentora ou Criadora de conteúdo técnico.
+## 🧭 Ikigai: O Meu Propósito na Cibersegurança
+A interseção que guia a minha transição para o mercado de TI:
+1. 💛 **O que amo fazer:** Investigar ameaças, proteger redes, resolver problemas lógicos complexos e fazer voluntariado para apoiar outras mulheres na tecnologia.
+2. 🛠️ **No que sou boa:** Lógica aplicada a redes, monitorização de tráfego (Wireshark, Packet Tracer) e suporte colaborativo à minha equipe.
+3. 🌍 **O que o mundo precisa:** Profissionais de SOC dedicados à proteção de dados e mulheres que estendam a mão para ajudar as próximas gerações a sentirem-se acolhidas no setor.
+4. 💰 **Pelo que posso ser paga:** Assistente de Cibersegurança, Analista de SOC, Suporte de TI / Help Desk.
 
-> **O meu Ikigai:** Ser uma desenvolvedora que cria soluções inclusivas e ensina outras mulheres a entrarem na tecnologia.
+> **O meu Ikigai:** Atuar na linha da frente da Cibersegurança para proteger o ambiente digital, e ser voluntária para retribuir o bem que me fizeram, garantindo que mais mulheres encontram o seu espaço e segurança na tecnologia.
 
 ---
 
 ## ⚖️ Produtividade e Comportamento
 
-* **O Ciclo PSC:** O nosso Pensamento gera um Sentimento, que por sua vez gera um Comportamento (Ação). Exemplo: Pensar que algo vai dar errado gera insegurança e faz com que evitemos a situação. O uso de um catálogo de sentimentos ajuda a nomear estados emocionais para uma melhor conexão.
-* **Síndrome do Impostor:** É quando se sente que não se pertence ou não se é bom o suficiente. Desenvolver a Autoestima Profissional implica reconhecer o que se está a aprender, valorizar o próprio processo e permitir-se ocupar um espaço no mundo do trabalho.
-* **Matriz de Eisenhower:** Ferramenta para priorizar tarefas. "Se tudo é urgente, nada é importante".
+* **O Ciclo PSC:** Pensamento, Sentimento e Comportamento. O objetivo é quebrar o ciclo de autossabotagem perante desafios técnicos, substituindo a insegurança (Sentimento) por ação prática nos laboratórios (Comportamento).
+* **Síndrome do Impostor:** O sentimento de não ser suficiente ou de estar no lugar errado. Combato isto valorizando o meu processo diário, celebrando pequenos avanços e aceitando que o erro e as dúvidas são parte essencial do trabalho num SOC.
+* **Matriz de Eisenhower:** "Se tudo é urgente, nada é importante". Uma ferramenta de gestão de tempo para priorizar o estudo de certificações, laboratórios de defesa cibernética e criação do portfólio.
 
 <br>
 
