@@ -136,3 +136,19 @@ Após o download íntegro, a máquina virtual **importou sem o erro de checksum*
     <li>Computador de <b>64 bits</b> com no mínimo <b>4 GB de RAM</b> e <b>50 GB de espaço livre</b> em disco.</li>
     <li><b>Virtualização de hardware ativada na BIOS</b> para executar VMs de 64 bits.</li>
     <li>O arquivo de imagem tem cerca de 2,5 GB e pode expandir até 5
+
+---
+
+<div align="center">
+  <a href="https://github.com/fer-isa/Minhas-Notas/tree/main/Mulher-Digital/Ciberseguranca">
+    <img src="https://img.shields.io/badge/⬅_Voltar_para_Índice_de_Cibersegurança-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=120&section=footer&animation=fadeIn" width="100%" />
+
+</div>
