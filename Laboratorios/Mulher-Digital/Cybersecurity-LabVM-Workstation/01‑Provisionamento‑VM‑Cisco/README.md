@@ -30,7 +30,6 @@ Baixar a máquina virtual oficial do curso da Cisco (`Cybersecurity_Lab_VM.ova`)
     <li><b>O erro do VirtualBox ao importar:</b> <code>VERR_TAR_BAD_CHKSUM_FIELD</code>.</li>
     <li><b>Minha dúvida:</b> por que o erro aparecia se o arquivo parecia ter sido baixado, e como resolver.</li>
   </ul>
-  <!-- Se tiver o print do erro VERR_TAR_BAD_CHKSUM_FIELD, coloque aqui com uma tag <img> -->
 </details>
 
 <details open>
@@ -48,7 +47,7 @@ Baixar a máquina virtual oficial do curso da Cisco (`Cybersecurity_Lab_VM.ova`)
 ## 🛠️ A Solução: Download pela Linha de Comando
 
 <details open>
-  <summary><b>⬇️ 3. Download com curl (Clique para recolher)</b></summary>
+  <summary><b>⬇️️ 3. Download com curl (Clique para recolher)</b></summary>
   <br>
   <ul>
     <li><b>Estratégia:</b> excluir o arquivo danificado e baixar pelo terminal com o <code>curl</code>, que é mais estável, em vez de insistir no navegador.</li>
@@ -65,9 +64,9 @@ Baixar a máquina virtual oficial do curso da Cisco (`Cybersecurity_Lab_VM.ova`)
 ---
 
 ## 💡 O Que Aprendi na Prática (Conceitos Técnicos)
-*   **OVA = tar:** o `.ova` empacota o descritor `.ovf` e os discos virtuais em um único arquivo tar. Um erro de checksum de tar indica arquivo truncado ou corrompido.
-*   **URLs pré-assinadas (AWS S3):** o acesso ao arquivo depende de um token temporário. Se ele expira durante a transferência, o download é cortado sem aviso claro.
-*   **`curl -L` e `curl -o`:** seguir redirecionamentos e controlar o nome do arquivo de saída são essenciais para baixar corretamente links assinados.
+* **OVA = tar:** o `.ova` empacota o descritor `.ovf` e os discos virtuais em um único arquivo tar. Um erro de checksum de tar indica arquivo truncado ou corrompido.
+* **URLs pré-assinadas (AWS S3):** o acesso ao arquivo depende de um token temporário. Se ele expira durante a transferência, o download é cortado sem aviso claro.
+* **`curl -L` e `curl -o`:** seguir redirecionamentos e controlar o nome do arquivo de saída são essenciais para baixar corretamente links assinados.
 
 ---
 
@@ -75,7 +74,6 @@ Baixar a máquina virtual oficial do curso da Cisco (`Cybersecurity_Lab_VM.ova`)
 Após o download íntegro, a máquina virtual **importou sem o erro de checksum** e iniciou normalmente, com o ambiente Linux CyberOps.
 
 <div align="center">
-  <!-- FOTO 1 AQUI: Desktop da VM em execução no VirtualBox (Captura_de_tela_2026-09-30_032957.png) -->
   <img width="800" alt="Evidência 1 - Desktop da Cybersecurity LabVM em execução no VirtualBox" src="https://github.com/user-attachments/assets/5f84a570-3b62-4f3c-9662-f900617f750c" />
   <p><i>Cybersecurity LabVM Workstation 20250409 com status <b>[Executando]</b> no Oracle VirtualBox (build NetAcad CSE Lab VM 2025-04-09).</i></p>
 </div>
@@ -85,17 +83,14 @@ Após o download íntegro, a máquina virtual **importou sem o erro de checksum*
   <br>
   <p>No Terminal da VM, executei <code>ip address</code> para validar as interfaces. Na primeira tentativa, um erro de digitação (<code>addressS</code>) retornou <code>Object "addressS" is unknown, try "ip help"</code>; corrigi o comando e segui.</p>
   <div align="center">
-    <!-- FOTO 2 AQUI: Terminal com o comando digitado errado (Captura_de_tela_2026-09-30_031940.png) -->
     <img width="700" alt="Evidência 2 - Terminal da VM com o comando ip addressS" src="https://github.com/user-attachments/assets/8074294f-686d-451b-83af-600c263b7a55" />
     <p><i>Terminal aberto na VM (<code>cisco@labvm</code>) com o comando digitado incorretamente.</i></p>
   </div>
   <div align="center">
-    <!-- FOTO 3 AQUI: Erro "Object addressS is unknown" e comando corrigido (Captura_de_tela_2026-09-30_032044.png) -->
     <img width="700" alt="Evidência 3 - Mensagem de erro e comando corrigido" src="https://github.com/user-attachments/assets/9c6515bf-ca1c-4620-860f-a8bfcb70f8fa" />
     <p><i>Mensagem de erro do <code>ip</code> e correção do comando para <code>ip address</code>.</i></p>
   </div>
   <div align="center">
-    <!-- FOTO 4 AQUI: Saída do ip address (Captura_de_tela_2026-09-30_032103.png) -->
     <img width="800" alt="Evidência 4 - Saída do comando ip address" src="https://github.com/user-attachments/assets/b6f6be59-6da8-476d-b91e-48f67ba21ba0" />
     <p><i>Interface <code>enp0s3</code> ativa com <code>10.0.2.15/24</code> (dinâmico) e loopback <code>127.0.0.1/8</code>.</i></p>
   </div>
@@ -106,7 +101,6 @@ Após o download íntegro, a máquina virtual **importou sem o erro de checksum*
   <br>
   <p>Abri o Firefox dentro da própria VM e acessei <code>https://www.google.com</code>, confirmando que a máquina tem acesso à internet.</p>
   <div align="center">
-    <!-- FOTO 5 AQUI: Firefox com Google carregado (Captura_de_tela_2026-09-30_032422.png) -->
     <img width="800" alt="Evidência 5 - Firefox da VM acessando o Google" src="https://github.com/user-attachments/assets/3f6882b7-6a1f-47ed-a9c7-44f258690cef" />
     <p><i>Navegação bem-sucedida a partir da VM, validando a conectividade externa.</i></p>
   </div>
@@ -135,7 +129,9 @@ Após o download íntegro, a máquina virtual **importou sem o erro de checksum*
   <ul>
     <li>Computador de <b>64 bits</b> com no mínimo <b>4 GB de RAM</b> e <b>50 GB de espaço livre</b> em disco.</li>
     <li><b>Virtualização de hardware ativada na BIOS</b> para executar VMs de 64 bits.</li>
-    <li>O arquivo de imagem tem cerca de 2,5 GB e pode expandir até 5
+    <li>O arquivo de imagem tem cerca de 2,5 GB e pode expandir até 5 GB durante o uso no VirtualBox.</li>
+  </ul>
+</details>
 
 ---
 
