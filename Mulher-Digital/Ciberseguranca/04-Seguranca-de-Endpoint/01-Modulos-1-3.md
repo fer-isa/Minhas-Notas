@@ -60,14 +60,16 @@ Como parte do laboratório, desenvolvi um material visual para conscientização
   4. Na dúvida, sempre relatar ao setor de TI.
 
 <br>
-
 <div align="center">
 
-<img width="832" height="1258" alt="Poster-engenharia-social" src="https://github.com/user-attachments/assets/72885b96-22c8-40e5-807a-5346b5bb0293" alt="Pôster Engenharia Social"  />
-<img width="1376" height="768" alt="Poster-phishing" src="https://github.com/user-attachments/assets/5b19a3f4-fbd1-4717-8920-b65d2b8ede1c" alt="Pôster Engenharia Social - Phishing" />
-
-
+  <p><b>Poster 1: Fundamentos de Engenharia Social e Vetores de Manipulação</b></p>
+  <img width="380" alt="Pôster Engenharia Social" src="https://github.com/user-attachments/assets/72885b96-22c8-40e5-807a-5346b5bb0293" />
+  <br><br>
+  <p><b>Poster 2: Anatomia e Prevenção contra Ataques de Phishing</b></p>
+  <img width="480" alt="Pôster Engenharia Social - Phishing" src="https://github.com/user-attachments/assets/5b19a3f4-fbd1-4717-8920-b65d2b8ede1c" />
+  <br><br>
   <p><i>Projeto de conscientização desenvolvido para a Formação Mulher Digital</i></p>
+
 </div>
 
 <br>
