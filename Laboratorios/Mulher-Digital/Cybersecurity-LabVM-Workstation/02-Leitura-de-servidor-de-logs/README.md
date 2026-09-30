@@ -151,6 +151,11 @@ tail -n 2 /home/analyst/lab.support.files/logstash-tutorial.log</code></pre>
 </details>
 ---
 
+
+
+
+---
+
 <div align="center">
   <a href="https://github.com/fer-isa/Minhas-Notas/tree/main/Mulher-Digital/Ciberseguranca">
     <img src="https://img.shields.io/badge/⬅_Voltar_para_Índice_de_Cibersegurança-161B22?style=for-the-badge&logo=github&logoColor=58A6FF" />
@@ -159,6 +164,7 @@ tail -n 2 /home/analyst/lab.support.files/logstash-tutorial.log</code></pre>
 
 <br>
 
+<div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1D3A,50:1A365D,100:2A4365&height=120&section=footer&animation=fadeIn" width="100%" />
 
